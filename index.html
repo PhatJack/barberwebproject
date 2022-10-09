@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>4Rau Barber Shop - Cutclub & Pomade SaiGon</title>
+
 </head>
 
 <body>
@@ -34,20 +38,71 @@
             </ul>
         </div>
     </header>
-    <div class="slide-content">
-        <p class="slide-text">Đặt lịch</p>
-        <div class="slide-gallery">
-            <div class="slide-img">
-                <img src="img/img1.jpg" alt="1" />
+    <div id="slider">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade active">
+                <img src="img/img1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
             </div>
-            <div class="slide-img">
-                <img src="img/img2.jpg" alt="2" />
+
+            <div class="mySlides fade">
+                <img src="img/img2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
             </div>
-            <div class="slide-img">
-                <img src="img/img3.jpg" alt="3">
+
+            <div class="mySlides fade">
+                <img src="img/img3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+    </div>
+    <div class="news-container">
+        <div class="news-wrapper">
+            <div class="news-heading">
+                <p>Tin tức underground</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-content">
+                    <img src="img/tintuc.png" alt="">
+                    <p class="news-description">Tiệm tóc UNDERGROUND đầu tiên ở tân bình</p>
+                </div>
+                <div class="news-content">
+                    <img src="img/tintuc.png" alt="">
+                    <p class="news-description">Tiệm tóc UNDERGROUND đầu tiên ở tân bình</p>
+                </div>
+                <div class="news-content">
+                    <img src="img/tintuc.png" alt="">
+                    <p class="news-description">Tiệm tóc UNDERGROUND đầu tiên ở tân bình</p>
+                </div>
+                <div class="news-content">
+                    <img src="img/tintuc.png" alt="">
+                    <p class="news-description">Tiệm tóc UNDERGROUND đầu tiên ở tân bình</p>
+                </div>
+                <div class="news-content">
+                    <img src="img/tintuc.png" alt="">
+                    <p class="news-description">Tiệm tóc UNDERGROUND đầu tiên ở tân bình</p>
+                </div>
+                <div class="news-content">
+                    <img src="img/tintuc.png" alt="">
+                    <p class="news-description">Tiệm tóc UNDERGROUND đầu tiên ở tân bình</p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
