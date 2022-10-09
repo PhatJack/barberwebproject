@@ -1,0 +1,72 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+html {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+input,
+textarea,
+select,
+button {
+  outline: none; }
+
+input {
+  line-height: normal; }
+
+label,
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+body {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: white; }
+
+.wrapper {
+  width: 100%; }
+
+.nav {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 15vh;
+  max-width: 1440px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .nav ul li {
+    list-style: none; }
+  .nav .list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .nav a {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700; }
+  .nav-left, .nav-right {
+    width: 30%; }
+  .nav-logo img {
+    width: 100px;
+    height: 100px; }
+
+.slide {
+  width: 100%; }
