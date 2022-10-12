@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+.service-wrapper{
+    height: 969px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.service-heading{
+    text-align: center;
+}
+.service-heading h1{
+    color: #9f7150;
+}
+.service-heading p{
+    margin-top: 30px;
+    max-width: 500px;
+    color: #737373;
+}
+.service-img{
+    margin-top: 50px;
+}
+.service-img img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+.service-container{
+    position: relative;
+
+}
+.service-content{
+    position: absolute;
+    width: 585px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    bottom: 350px;
+    right: 35px;
+}
+.even{
+    display: flex;
+    flex-direction: row;
+}
+.second{
+    left:20px;
+}
+.third{
+    bottom: 165px;
+    right:170px;
+}
+.fourth{
+    bottom: 165px;
+    left: 135px;
+}
+.fifth{
+    bottom: -20px;
+    right: 36px;
+}
+.sixth{
+    bottom: -20px;
+    left: 20px;
+}
+.service-content .service-logo{
+    width: 120px;
+    height: 120px;
+    margin-left: 25px;
+    position: relative;
+}
+.service-content .service-logo img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 1px solid #9f7150;
+    border-style: dashed;
+    transition: 0.35s linear;
+    background: white;
+    box-shadow: 0 0 0 10px white;
+    
+}
+.service-content:hover .service-logo img{
+    background: black;
+}
+.service-description{
+    max-width: 330px;
+    text-align: right;
+}
+.service-description p{
+    color: #868686;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.service-description h3{
+    color: #1b1d27;
+    font-size: 20px;
+}
+.even .service-description{
+    text-align: left;
+    margin-left: 25px;
+}
+.content{
+    margin: 0 auto;
+    max-width: 600px;
+}
