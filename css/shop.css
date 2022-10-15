@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shop {
+    height: 80vh;
+    color: #9f7150;
+
+}
+
+.shop-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-heading p:nth-child(1) {
+    margin-top: 45px;
+    font-size: 50px;
+    line-height: calc(65 / 50);
+}
+
+.shop-heading p:nth-child(2) {
+    font-size: 35px;
+    line-height: calc(45 / 35);
+    margin-bottom: 25px;
+}
+
+.shop-product {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.shop-mustache {
+    margin-bottom: 52px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 350px;
+    border: 1px solid #9f7150;
+    border-style: dashed;
+}
+
+.product-content .product-name {
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    padding: 0 10px 10px 10px;
+}
+
+.product-content .product-price {
+    font-size: 20px;
+    padding: 0 10px 10px 10px;
+    color: #9f7150;
+}
+
+.shop .shop-btn {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.shop-btn a {
+    color: #9f7150;
+    border: 1px solid #9f7150;
+    padding: 20px;
+    transition: box-shadow 0.5s linear;
+}
+
+.shop-btn a:hover {
+    box-shadow: inset 0 0 0 3em #9f7150;
+    color: white
+}

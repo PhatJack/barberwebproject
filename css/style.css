@@ -13,11 +13,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 15vh;
+  height: 10vh;
   min-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background: transparent;
+  background: rgba(0,0,0,0.7);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -27,7 +27,8 @@ body {
   list-style: none;
 }
 .nav ul li i{
-  color: black;
+  color: rgba(255,255,255,0.8);
+
 }
 .nav .list {
   display: flex;
@@ -174,6 +175,8 @@ body {
 .news-container {
   width: 100%;
   background-image: url("/BarberPage/barberwebproject/img/bg_main.jpg");
+  /* background-color: #333333; */
+  height: 90vh;
 }
 /* news content */
 .news-wrapper {
@@ -213,14 +216,61 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+.reveal {
+  position: relative;
+  opacity: 0;
+}
 
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s linear;
+}
+.active.fade-left {
+  animation: fade-left 1s linear;
+}
+.active.fade-right {
+  animation: fade-right 1s linear;
+}
+/* Animation On Scroll  */
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* Read more button */
 .btn {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-
+  margin-top: 50px;
   text-align: center;
   border: 2px solid #8C5E35;
   cursor: pointer;
