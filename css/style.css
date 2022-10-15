@@ -174,7 +174,7 @@ body {
 /* news from underground */
 .news-container {
   width: 100%;
-  background-image: url("/BarberPage/barberwebproject/img/bg_main.jpg");
+  background-image: url("bg_main.jpg");
   /* background-color: #333333; */
   height: 90vh;
 }
