@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+
+body{
+    font-family: "Prata", sans-serif;
+}
+.about-us{
+    display: flex;
+    max-height: 635px;
+}
+.about-us-contain{
+    width: 100%;
+}
+.about-us-contain .about-us-description{
+    margin: 95px 301px 85px 50px;
+}
+.about-us-img{
+    width: 100%;
+    height: inherit;
+    background: red;
+}
+.about-us-contain{
+    background-color: #333333;
+}
+.about-us-contain .about-us-description .about-us-heading span{
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #9f7150;
+}
+.about-us-contain .about-us-description .about-us-heading p{
+    color: #ffffff86;
+    max-width: 571px;
+    margin-top: 20px;
+}
+.about-us-contain .about-us-description .about-us-logo{
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.about-us-contain .about-us-description .about-us-content{
+    max-width: 571px;
+}
+.about-us-description .about-us-content p{
+    font-size: 14px;
+    line-height: calc(24/14);
+    color: #989898;
+}
+.about-us-description .about-us-content p:nth-child(2){
+    margin-top: 25px;
+}
