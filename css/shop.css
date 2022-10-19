@@ -76,6 +76,7 @@
 }
 .product-content .product-img:hover img{
     background-color: #9f7150;
+    transition: 0.3s linear;
 }
 .product-content .product-img:hover .buy-btn button{
     transform: translateY(-100%);

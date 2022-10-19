@@ -12,6 +12,7 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/about_us.css">
     <link rel="stylesheet" href="./css/ourteam.css">
@@ -23,26 +24,38 @@
 </head>
 
 <body>
-    <header class="nav">
-        <div class="nav-left">
-            <ul class="list">
-                <li><a href="#" class="text_change">Lifestyle</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Learn Barber</a></li>
-            </ul>
-        </div>
-        <div class="nav-logo">
-            <img src="img/logo2.png" alt="4RauBarberLogo">
-        </div>
-        <div class="nav-right">
-            <ul class="list">
-                <li><a href="#">Book</a></li>
-                <li><i class="bi bi-facebook"></i></li>
-                <li><i class="bi bi-instagram"></i></li>
-                <li><i class="bi bi-youtube"></i></li>
-                <li><i class="bi bi-cart"></i></li>
-                <li><i class="bi bi-search"></i></li>
-            </ul>
+    <header class="nav" id="nav">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="img/logo2.png" alt="4RauBarberLogo">
+            </div>
+            <div class="navbar">
+                <ul class="list">
+                    <li><a href="#" class="text_change">Lifestyle</a></li>
+                    <li><a href="#">Sản phẩm</a>
+                        <ul>
+                            <li>Wax</li>
+                            <li>Clothes</li>
+                            <li>Pomade</li>
+                            <li>The Mavericks</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Học Barber</a></li>
+                    <li><a href="#">Đặt lịch</a></li>
+                </ul>
+                <ul class="social-icon">
+                    <li><i class="bi bi-facebook"></i></li>
+                    <li><i class="bi bi-instagram"></i></li>
+                    <li><i class="bi bi-youtube"></i></li>
+                    <li><i class="bi bi-cart"></i></li>
+                    <li><i class="bi bi-search"></i></li>
+                </ul>
+            </div>
+            <!-- <div class="hero">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div> -->
         </div>
     </header>
     <div id="slider">
@@ -83,33 +96,32 @@
             </div>
             <div class="news-grid">
                 <div class="news-content">
-                    <img src="img/tintuc.png" alt="" class="reveal fade-left">
+                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom" style="animation-duration: 1s;">
                     <p class="news-description reveal fade-bottom">Tiệm tóc UNDERGROUND đầu
                         tiên ở tân bình1</p>
                 </div>
                 <div class="news-content">
-                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom">
-                    <p class="news-description reveal fade-bottom">Tiệm tóc UNDERGROUND đầu
-                        tiên ở tân bình2</p>
+                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom" style="animation-duration: 1.2s;">
+                    <p class="news-description reveal fade-bottom" style="animation-duration: 1.3s;">Tiệm tóc UNDERGROUND đầu tiên ở tân bình2</p>
                 </div>
                 <div class="news-content">
-                    <img src="img/tintuc.png" alt="" class="reveal fade-right">
-                    <p class="news-description reveal fade-bottom">Tiệm tóc UNDERGROUND đầu
+                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom" style="animation-duration: 1.4s;">
+                    <p class="news-description reveal fade-bottom" style="animation-duration: 1.5s;">Tiệm tóc UNDERGROUND đầu
                         tiên ở tân bình3</p>
                 </div>
                 <div class="news-content">
-                    <img src="img/tintuc.png" alt="" class="reveal fade-left">
-                    <p class="news-description reveal fade-bottom">Tiệm tóc UNDERGROUND đầu
+                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom" style="animation-duration: 1.6s;">
+                    <p class="news-description reveal fade-bottom"style="animation-duration: 1.7s;">Tiệm tóc UNDERGROUND đầu
                         tiên ở tân bình4</p>
                 </div>
                 <div class="news-content">
-                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom">
-                    <p class="news-description reveal fade-bottom">Tiệm tóc UNDERGROUND đầu
+                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom" style="animation-duration: 1.8s;">
+                    <p class="news-description reveal fade-bottom"style="animation-duration: 1.9s;">Tiệm tóc UNDERGROUND đầu
                         tiên ở tân bình5</p>
                 </div>
                 <div class="news-content">
-                    <img src="img/tintuc.png" alt="" class="reveal fade-right">
-                    <p class="news-description reveal fade-bottom">Tiệm tóc UNDERGROUND đầu
+                    <img src="img/tintuc.png" alt="" class="reveal fade-bottom" style="animation-duration: 2s;">
+                    <p class="news-description reveal fade-bottom"style="animation-duration: 2.1s;">Tiệm tóc UNDERGROUND đầu
                         tiên ở tân bình6</p>
                 </div>
             </div>
@@ -118,13 +130,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="shop-container">
-        <div class="shop-wrapper">
-            <div class="shops-heading">
-                <p>Sản phẩm 4Rau</p>
-            </div>
-        </div>
-    </div> -->
     <div class="service-wrapper">
         <div class="service-heading">
             <h1>Our Services</h1>
@@ -474,6 +479,7 @@
 </script> -->
 
 <script src="./js/slideshow.js"></script>
+<script src="./js/navbar.js"></script>
 <script src="./js/AOS.js"></script>
 
 </html>

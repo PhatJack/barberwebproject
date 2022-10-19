@@ -53,6 +53,10 @@ ul li {
     /* margin-bottom: 25px; */
     color: rgba(255, 255, 255, 0.5);
 }
+.footer-content ul li:hover{
+    color: white;
+    transition: all 0.15s ease-in;
+}
 .footer-more-content {
     display: flex;
     flex-direction: column;

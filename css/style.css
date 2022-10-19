@@ -7,61 +7,7 @@ body {
   font-family: 'Alkalami', serif;
   font-family: 'Oswald', sans-serif;
 }
-.nav {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10vh;
-  min-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
-.nav ul li {
-  list-style: none;
-}
-.nav ul li i{
-  color: rgba(255,255,255,0.8);
-
-}
-.nav .list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav a {
-  color: #9f7150;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  transition: 275ms ease-in-out;
-  background-position: 100%;
-  background-size: 100% 200%;
-}
-
-.nav a:hover{
-  background: linear-gradient(to right, #ff8100, white 70%, white 70%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-left,
-.nav-right {
-  width: 30%;
-}
-
-.nav-logo img {
-  width: 140px;
-  height: 100px;
-}
 /* .slide {
   width: 100%; } */
 #slider .slideshow-container {
@@ -176,12 +122,12 @@ body {
   width: 100%;
   background-image: url("bg_main.jpg");
   /* background-color: #333333; */
-  height: 90vh;
 }
+
 /* news content */
 .news-wrapper {
   max-width: 1200px;
-  max-height: 850px;
+  height: 92vh;
   margin: 0 auto;
   color: black;
 }
@@ -216,6 +162,19 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+  .news-container{
+    height: 120vh;
+  }
+  .news-grid{
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
 .reveal {
   position: relative;
   opacity: 0;
@@ -224,31 +183,38 @@ body {
 .reveal.active {
   opacity: 1;
 }
+
 .active.fade-bottom {
   animation: fade-bottom 1s linear;
 }
+
 .active.fade-left {
   animation: fade-left 1s linear;
 }
+
 .active.fade-right {
   animation: fade-right 1s linear;
 }
+
 /* Animation On Scroll  */
 @keyframes fade-bottom {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes fade-left {
   0% {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -260,17 +226,17 @@ body {
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 /* Read more button */
 .btn {
   max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin: 50px auto;
   text-align: center;
   border: 2px solid #8C5E35;
   cursor: pointer;
@@ -279,6 +245,7 @@ body {
   font-weight: 700;
   color: #8C5E35;
   transition: 0.4s linear;
+
 }
 
 .btn:hover {
