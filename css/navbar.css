@@ -5,13 +5,15 @@
 }
 .nav .container{
     z-index: 111;
-    position: fixed;
+    position: absolute;
     background: transparent;
     display: flex;
     width: 100%;
     margin: 0;
     padding: 0 10%;
-    top: -100px;
+    /* top: -100px; */
+    transition: top 0.3s linear;
+
 }
 .nav-logo{
     width: 15%;
@@ -176,7 +178,17 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 .nav .container.active{
+    z-index: 1111;
+    position: fixed;
     top: 0;
     background-color: #333333;
-    transition: top 0.3s linear ;
+    animation: dropdown 0.3s linear alternate;
+}
+@keyframes dropdown {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 0px;
+    }
 }

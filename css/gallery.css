@@ -8,12 +8,15 @@ body{
     font-family: serif;
     background-color: #ffffff;
 }
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
 .gallery{
-    max-width: 1110px;
     height: 110vh;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     justify-content: center;
     align-items: center;
 }
