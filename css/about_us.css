@@ -7,7 +7,7 @@ body{
 }
 .about-us{
     display: flex;
-    max-height: 635px;
+    max-height: 640px;
 }
 .about-us-contain{
     width: 100%;
