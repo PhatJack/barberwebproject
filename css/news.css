@@ -3,43 +3,42 @@
 
 /* news from underground */
 .news-container {
-    width: 100%;
     background-image: url("bg_main.jpg");
-    /* background-color: #333333; */
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 /* news content */
 .news-wrapper {
-    max-width: 1200px;
-    height: 92vh;
+    width: 1200px;
+    width: 100%;
+    padding: 0 10%;
+    height: 90vh;
     margin: 0 auto;
     color: black;
 }
 
-.news-heading {
+.news-heading{
     font-size: 28px;
     font-weight: 700;
     padding: 5px 0;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     color: black;
     border-bottom: 1px solid black;
+    position: relative;
 }
 
 .news-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 90px;
-    grid-row-gap: 33px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .news-content {
-    max-width: 450px;
+    max-width: 350px;
     margin: 0 auto;
 }
-
 .news-content .news-description {
     margin-top: 6px;
     font-size: 17px;
@@ -49,13 +48,12 @@
 
 @media screen and (max-width: 768px) {
     .news-container {
-        height: 120vh;
+        height: 12  0vh;
     }
 
     .news-grid {
         padding: 0 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
