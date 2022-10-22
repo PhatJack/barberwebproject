@@ -16,7 +16,10 @@ body{
 }
 .about-us-img{
     width: 100%;
-    background: red;
+    background-image: url("./hello.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 100% 200%; */
 }
 .about-us-contain{
     background-color: #333333;

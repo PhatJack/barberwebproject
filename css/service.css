@@ -9,6 +9,8 @@
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     margin-bottom: 140px;
+  scroll-behavior: smooth;
+
 }
 .service-heading{
     text-align: center;

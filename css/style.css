@@ -7,6 +7,7 @@ body {
   font-family: 'Alkalami', serif;
   font-family: 'Oswald', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* .slide {

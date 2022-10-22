@@ -6,6 +6,8 @@
     background-image: url("bg_main.jpg");
     background-repeat: repeat-y;
     background-size: cover;
+    scroll-behavior: smooth;
+
 }
 
 /* news content */
@@ -16,6 +18,8 @@
     /* height: 90vh; */
     margin: 0 auto;
     color: black;
+    scroll-behavior: smooth;
+
 }
 
 .news-heading {
@@ -33,12 +37,13 @@
 .news-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    align-items: center;
 }
 
 .news-content {
-    max-width: 350px;
+    max-width: 320px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .news-content img {
@@ -53,9 +58,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .news-container {
-        height: 12 0vh;
-    }
 
     .news-grid {
         padding: 0 10px;
@@ -76,7 +78,7 @@
     font-weight: 700;
     color: #8C5E35;
     transition: 0.4s linear;
-    
+
 
 }
 
