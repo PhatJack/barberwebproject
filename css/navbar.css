@@ -76,14 +76,13 @@
     display: none;
 }
 .navbar .list li ul li{
-    /* width: 0%; */
-    width: 0%;
-    white-space: nowrap;
+    width: 100%;
+    /* white-space: nowrap; */
 }
 .navbar .list li ul li:hover{
     color: #333333;
     background-color: #eee;
-    width: 100%;
+    /* width: 100%; */
 }
 .navbar li:hover > ul{
     display: block;

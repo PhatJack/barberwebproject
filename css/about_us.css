@@ -7,7 +7,7 @@ body{
 }
 .about-us{
     display: flex;
-    max-height: 640px;
+    height: 69vh;
 }
 .about-us-contain{
     width: 100%;
@@ -17,7 +17,6 @@ body{
 }
 .about-us-img{
     width: 100%;
-    height: inherit;
     background: red;
 }
 .about-us-contain{
@@ -39,7 +38,7 @@ body{
     margin-bottom: 45px;
 }
 .about-us-contain .about-us-description .about-us-content{
-    max-width: 571px;
+    max-width: 570px;
 }
 .about-us-description .about-us-content p{
     font-size: 14px;
