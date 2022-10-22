@@ -13,7 +13,7 @@ body{
     margin: 0 auto;
 }
 .gallery{
-    height: 110vh;
+    /* height: 110vh; */
     display: flex;
     flex-direction: column;
     /* margin: 0 auto; */
