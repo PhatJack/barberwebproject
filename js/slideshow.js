@@ -8,7 +8,7 @@ function plusSlides(n) {
 // Thumbnail image controls
 
 function autoSlides() {
-  console.log("hi");
+  // console.log("hi");
   showSlides(slideIndex);
   slideIndex++;
   setTimeout(autoSlides, 3500);
@@ -20,10 +20,10 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   var a = document.getElementById("slider");
-  console.log(a);
+  // console.log(a);
   var slides = document.querySelectorAll(".mySlides");
   var dots = document.querySelectorAll(".dot");
-  console.log(slides, dots);
+  // console.log(slides, dots);
   if (n > slides.length - 1) {
     slideIndex = 0;
   }

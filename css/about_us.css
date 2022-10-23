@@ -12,14 +12,14 @@ body{
     width: 100%;
 }
 .about-us-contain .about-us-description{
-    margin: 95px 301px 85px 50px;
+    margin: 55px 150px 120px 100px;
 }
 .about-us-img{
     width: 100%;
     background-image: url("./hello.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: 100% 200%; */
+    background-position: 100%;
 }
 .about-us-contain{
     background-color: #333333;
@@ -39,9 +39,9 @@ body{
     margin-top: 25px;
     margin-bottom: 45px;
 }
-.about-us-contain .about-us-description .about-us-content{
-    max-width: 570px;
-}
+/* .about-us-contain .about-us-description .about-us-content{
+    width: 570px;
+} */
 .about-us-description .about-us-content p{
     font-size: 14px;
     line-height: calc(24/14);
@@ -49,4 +49,32 @@ body{
 }
 .about-us-description .about-us-content p:nth-child(2){
     margin-top: 25px;
+}
+@media  screen and (max-width: 768px){
+
+    .about-us-img{
+        display: none;
+    }
+    .about-us-contain .about-us-description{
+        padding:0;
+        margin: 50px;
+        margin-bottom: 80px !important;
+
+    }
+    .about-us-contain .about-us-description .about-us-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: block !important;
+        text-align: center;
+    }
+    .about-us-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .about-us-description .about-us-content{
+        text-align: center;
+        width: 100%;
+    }
 }

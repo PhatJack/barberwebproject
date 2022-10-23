@@ -19,7 +19,7 @@
 }
 
 .nav-logo {
-    width: 15%;
+    width: 10%;
 }
 
 .nav-logo img {
@@ -28,10 +28,11 @@
 }
 
 .navbar {
-    width: 85%;
+    width: 90%;
     color: #eee;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar ul {
@@ -125,52 +126,63 @@
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
+    .nav-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 15px;
     }
 
-    .nav-left .list li {
+    .navbar .list li {
         opacity: 0;
     }
 
-    .nav-logo {
-        order: -1;
+    .navbar .list {
+        background-color: #9f7150;
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        top: 10vh;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-radius: 1rem 0 0 0;
+        /* z-index: 10000; */
+        /* display: block !important; */
     }
 
-    .nav-right .list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 25px;
+    .navbar .list li ul li {
+        display: none;
+        /* z-index: 11111; */
+    }
+
+    .navbar .social-icon {
+        display: none;
     }
 
     .hero {
         display: block;
-    }
-
-    .nav-left .list {
         position: absolute;
-        right: 0px;
-        height: 22vh;
-        top: 10vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #9f7150;
-        z-index: 22;
-        width: 50%;
-        border-radius: 10px;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        top: 0;
+        right: 0;
+        padding: 4%;
     }
-
 }
 
-.nav-left ul.list.active {
+.navbar ul.list.active {
     color: white;
     font-size: 30px;
     /* display: block !important; */
     transform: translateX(0%);
+}
+
+.navbar ul.list.active li a:hover {
+    /* background-color: red; */
+    color: #333333 !important;
 }
 
 @keyframes NavFadeIn {
@@ -187,7 +199,7 @@
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(45deg) translate(6px, 5px);
 }
 
 .toggle .line2 {
@@ -195,15 +207,15 @@
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(-45deg) translate(6px, -5px);
 }
 
 .nav .container.active {
-    z-index: 1111;
     position: fixed;
-    top: 0;
-    background-color: #333333;
+    /* top: 0; */
+    background-color: #333333 !important;
     animation: dropdown 0.3s linear alternate;
+    z-index: 20000;
 }
 
 @keyframes dropdown {

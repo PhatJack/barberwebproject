@@ -13,8 +13,8 @@
 /* news content */
 .news-wrapper {
     width: 1200px;
-    width: 100%;
-    padding: 0 10%;
+    width: 90%;
+    padding: 0 5%;
     /* height: 90vh; */
     margin: 0 auto;
     color: black;
@@ -58,9 +58,11 @@
 }
 
 @media screen and (max-width: 768px) {
-
+    .news-wrapper{
+        width: 100%;
+        padding: 0 5%;
+    }
     .news-grid {
-        padding: 0 10px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -68,7 +70,7 @@
 
 /* Read more button */
 .btn {
-    max-width: 300px;
+    max-width: 280px;
     margin: 50px auto;
     text-align: center;
     border: 2px solid #8C5E35;
@@ -78,8 +80,7 @@
     font-weight: 700;
     color: #8C5E35;
     transition: 0.4s linear;
-
-
+    
 }
 
 .btn:hover {

@@ -43,7 +43,6 @@
     margin-bottom: 80px;
 }
 .member-photo{
-    width: 350px;
     height: 500px;
 }
 .member .member-information{
@@ -113,4 +112,14 @@
     color: #989898;
     letter-spacing: 0.3px;
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .our-team{
+        max-width: 768px;
+    }
+    .our-team-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
