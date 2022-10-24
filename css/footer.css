@@ -167,3 +167,22 @@ ul li {
 .footer-mustache{
     margin: 25px auto;
 }
+@media screen and (max-width: 768px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    }
+    .footer-content{
+        text-align: center;
+    }
+    .footer-more-content .form{
+        text-align: center;
+    }
+    .footer-more-content .form input{
+        width: 100%;
+        margin: 35px auto;
+    }
+}

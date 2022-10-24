@@ -19,16 +19,16 @@
 }
 
 .nav-logo {
-    width: 10%;
+    width: 15%;
 }
 
 .nav-logo img {
-    width: 140px;
+    width: 150px;
     padding: 10px;
 }
 
 .navbar {
-    width: 90%;
+    width: 85%;
     color: #eee;
     display: flex;
     justify-content: center;
@@ -130,9 +130,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        margin: 15px;
     }
-
     .navbar .list li {
         opacity: 0;
     }
