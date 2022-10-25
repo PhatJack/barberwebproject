@@ -13,9 +13,6 @@
     margin: 0;
     padding: 0 5%;
     transition: top 0.3s linear;
-    scroll-behavior: smooth;
-
-
 }
 
 .nav-logo {
@@ -138,24 +135,23 @@
     .navbar .list {
         background-color: #9f7150;
         position: fixed;
-        width: 50vw;
-        height: 100vh;
         top: 10vh;
         right: 0;
+        width: 100vw;
+        height: fit-content;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        border-radius: 1rem 0 0 0;
+        /* border-radius: 1rem 0 0 0;s */
         /* z-index: 10000; */
         /* display: block !important; */
     }
 
     .navbar .list li ul li {
         display: none;
-        /* z-index: 11111; */
+        z-index: 11111;
     }
 
     .navbar .social-icon {
@@ -187,12 +183,14 @@
     from {
         opacity: 0;
         transform: translateX(100px);
+        border-bottom: none;
     }
 
     to {
         opacity: 1;
         transform: translateX(0px);
         font-size: 30px;
+        /* border-bottom: 1px solid #333333; */
     }
 }
 
@@ -216,7 +214,7 @@
     z-index: 20000;
 }
 
-@keyframes dropdown {
+@keyframes dropdown{
     0% {
         top: -100px;
     }

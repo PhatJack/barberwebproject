@@ -126,4 +126,7 @@
         display: flex;
         justify-content: space-evenly;
     }
+    .shop-product .product-content:nth-child(5){
+        display: none;
+    }
 }
