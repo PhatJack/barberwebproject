@@ -1,2 +1,2 @@
-BarberShop
+BarberShop \n
 Web FrontEnd Semester
