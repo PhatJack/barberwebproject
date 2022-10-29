@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+html{
 
+  scroll-behavior: smooth;
+}
 body {
   max-width: 100vw;
   background: rgba(0, 0, 0, 0.5);
@@ -7,7 +10,6 @@ body {
   font-family: 'Alkalami', serif;
   font-family: 'Oswald', sans-serif;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 /* .slide {
