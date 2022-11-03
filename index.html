@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/favicon2.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon2.png">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/AOS.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/service.css">
@@ -29,15 +29,15 @@
 </head>
 
 <body>
-    <header class="nav" id="nav">
-        <div class="container">
+    <header class="nav container" id="nav">
+        <div class="nav-container">
             <div class="nav-logo">
                 <img src="img/logo2.png" alt="5Logo">
             </div>
             <div class="navbar">
                 <ul class="list">
                     <li><a href="#news" class="text_change">Lifestyle</a></li>
-                    <li><a href="#">Sản phẩm</a>
+                    <li><a href="#product">Sản phẩm</a>
                         <ul>
                             <li class="temp">Wax</li>
                             <li class="temp">Clothes</li>
@@ -147,7 +147,7 @@
                 </div>
             </div>
             <div class="btn">
-                <span>Xem thêm</span>
+                <span><a href="./ReadMoreFromNews/page1.html" target="_blank">Xem thêm</a></span>
             </div>
         </div>
     </div>
@@ -156,6 +156,9 @@
             <h1>Our Services</h1>
             <p>Ut ullamco aute ea commodo duis magna ullamco id sunt deserunt commodo aute. Minim ex adipisicing est
                 proident cupidatat veniam non officia anim in ipsum tempor ea. </p>
+        </div>
+        <div class="service-mustache">
+            <img src="img/mustache3.png" alt="">
         </div>
         <div class="service-img reveal fade-bottom" style="animation-duration: 1.15s;">
             <img src="img/img1.jpg" alt="">
@@ -254,7 +257,7 @@
             </div>
         </div>
     </div>
-    <div class="shop container">
+    <div class="shop container" id="product">
         <div class="shop-heading reveal fade-bottom">
             <p class=" reveal fade-bottom" style="animation-duration: 1.25s;">Our Shop</p>
             <p class=" reveal fade-bottom" style="animation-duration: 1.35s;">-Product-</p>
@@ -328,7 +331,7 @@
             <a href="#">More Product</a>
         </div>
     </div>
-    <div class="our-team container">
+    <div class="our-team team-container">
         <div class="our-team-heading reveal fade-bottom">
             <h1>About Our Creative Team</h1>
             <p>The creator of this websign</p>
@@ -448,6 +451,12 @@
                 <div class="gallery-img">
                     <img src="./img/4200.webp" alt="">
                 </div>
+                <div class="gallery-img">
+                    <img src="./img/4200.webp" alt="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/4200.webp" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -469,6 +478,7 @@
                     <div class="form">
                         <p>Get the notification</p>
                         <input type="email" class="email-check" name="email" placeholder="Enter your email">
+                        <button type="submit">Submit</button>
                     </div>
                     <div class="appointment">
                         <p>Make an appointment</p>

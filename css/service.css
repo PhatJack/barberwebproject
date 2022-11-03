@@ -8,9 +8,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Prata', sans-serif;
     margin-bottom: 140px;
     scroll-behavior: smooth;
+    padding-top: 50px;
 
 }
 
@@ -26,8 +27,13 @@
     margin-top: 30px;
     max-width: 500px;
     color: #737373;
+    margin-bottom: 30px;
 }
-
+.service-mustache{
+    width: 160px;
+    height: 50px;
+    margin-bottom: 20px;
+}
 .service-img {
     margin-top: 50px;
 }
@@ -42,7 +48,6 @@
     position: relative;
 
 }
-
 .service-content {
     position: absolute;
     width: 585px;

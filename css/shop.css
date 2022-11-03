@@ -8,7 +8,8 @@
     /* height: 85vh; */
     color: #9f7150;
     scroll-behavior: smooth;
-
+    width: 100%;
+    padding: 0 10%;
 
 }
 
@@ -36,7 +37,7 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
@@ -128,5 +129,13 @@
     }
     .shop-product .product-content:nth-child(5){
         display: none;
+    }
+}
+@media screen and (max-width:1540px) {
+    .shop{
+        padding: 0 5%;
+    }
+    .shop-product{
+        justify-content: center;
     }
 }

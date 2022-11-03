@@ -43,12 +43,18 @@ body{
     width: 570px;
 } */
 .about-us-description .about-us-content p{
+    max-width: 650px;
     font-size: 14px;
     line-height: calc(24/14);
     color: #989898;
 }
 .about-us-description .about-us-content p:nth-child(2){
     margin-top: 25px;
+}
+@media screen and (max-width: 1540px){
+    .about-us-img{
+        background-position: 50%;
+    }
 }
 @media  screen and (max-width: 768px){
 

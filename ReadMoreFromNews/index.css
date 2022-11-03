@@ -1,0 +1,132 @@
+
+body {
+    background-image: url('../img/bg_main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: contrast(90%); */
+}
+ul li {
+    list-style: none;
+}
+
+.parallax {
+    background-image: url('../img/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.parallax h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.parallax .news-link {
+
+    margin-top: 20px;
+}
+
+.parallax .news-link a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.news-wrapper {
+    margin-top: 22px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.news-wrapper .news-container {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.col-left {
+    width: 65%;
+    float: left;
+    /* margin-right: 12px; */
+}
+
+.col-left .list-news .news-img {
+    height: 250px;
+    width: calc(45% - 50px);
+}
+.col-left .list-news .news-img img{
+    max-width: 100%;
+    height: 100%;   
+}
+.col-left .list-news li {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #e1bf99;
+    margin-bottom: 20px;
+}
+
+.col-left .list-news li .news-description {
+    width: calc(55% + 50px);
+}
+
+.col-left .list-news li .news-description a {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s ease-in;
+}
+.col-left .list-news li .news-description a:hover{
+    color: #9f7150;
+}
+.col-left .list-news li .news-description p {
+    margin: 12px 0;
+}
+.col-right{
+    width: calc(35% - 50px);
+    float: right;
+    text-align: right;
+    /* margin-left: 22px; */
+}
+.col-right .grey{
+    filter:grayscale(70%);
+}
+.col-right img{
+    margin-bottom: 22px;
+}
+.col-right .col-links{
+    width: 490px;
+    height: 490px;
+}
+.col-right .col-links img{
+    width: 100%;
+    height: 100%;
+}
+
+.pagination{
+    width: auto;
+    text-align: center;
+    margin-top: 35px;
+}
+.pagination .pages li{
+    display: inline-block;
+}
+.pagination .pages li{
+    height: 35px;
+    color: black;
+    padding: 8px;
+    border: 1px solid #d5d5d5;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.pagination .pages li.active{
+    background-color: #000;
+    color: white;
+}
+.pagination .pages li:hover{
+    background-color: #eee;
+}
