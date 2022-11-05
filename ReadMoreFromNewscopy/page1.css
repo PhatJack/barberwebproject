@@ -8,7 +8,6 @@ body {
 ul li {
     list-style: none;
 }
-
 .parallax {
     background-image: url('../img/img1.jpg');
     background-repeat: no-repeat;
@@ -19,6 +18,7 @@ ul li {
     color: white;
     padding: 120px 0;
     text-align: center;
+    /* background: linear-gradient(to bottom, #727272,#787878); */
 }
 
 .parallax h1 {
@@ -26,8 +26,7 @@ ul li {
     font-size: 26px;
 }
 
-.parallax .news-link {
-
+.parallax .news-link{
     margin-top: 20px;
 }
 
@@ -81,7 +80,7 @@ ul li {
     transition: 0.3s ease-in;
 }
 .col-left .list-news li .news-description a:hover{
-    color: #9f7150;
+    color: #c47237;
 }
 .col-left .list-news li .news-description p {
     margin: 12px 0;
@@ -129,4 +128,12 @@ ul li {
 }
 .pagination .pages li:hover{
     background-color: #eee;
+}
+@media screen and (max-width:1540px) {
+    .news-wrapper .news-container{
+        padding: 0 5%;
+    }
+    .col-left .list-news .news-img{
+        margin-right: 22px;
+    }
 }

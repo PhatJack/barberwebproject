@@ -1,0 +1,57 @@
+:root{
+    --line-height: 1.5em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-left .col-left-container {
+    width: 100%;
+    background: #d4a98a;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.col-left .col-left-container .col-left-content h1 {
+    max-width: 800px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 25px auto;
+    text-transform: uppercase;
+
+}
+
+.col-left .col-left-container p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    line-height: var(--line-height);
+    letter-spacing: 0.5px;
+}
+
+.col-left .col-left-container .col-left-content .col-left-desc {
+    margin-top: 30px;
+}
+
+.col-left-desc strong.header{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.col-left-content .col-left-desc strong.header_temp{
+    font-size: 25px;
+}
+.col-left-content .col-left-desc strong:nth-child(2),
+.col-left-content .col-left-desc span{
+    font-size: 20px;
+    line-height: var(--line-height);
+}
+.col-left-desc p{
+    margin-top: 22px;
+}
+@media screen and (max-width: 1540px) {
+    
+}
