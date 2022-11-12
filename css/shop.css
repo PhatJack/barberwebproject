@@ -131,11 +131,14 @@
         display: none;
     }
 }
-@media screen and (max-width:1540px) {
+@media screen and (max-width:1441px) {
     .shop{
         padding: 0 5%;
     }
     .shop-product{
-        justify-content: center;
+        justify-content: space-between;
+    }
+    .product-content:nth-child(5){
+        display: none;
     }
 }

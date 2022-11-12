@@ -16,7 +16,7 @@ const data = [
     {
         "id": "3",
         "url" : "./imgfornew/3.jpeg",
-        "header" : "Đồng phục Gakuran đi học của thanh niên Nhật Bổn ",
+        "header" : "Đồng phục Gakuran đi học của thanh niên Nhật Bổn",
         "desc" : "Nếu là dân mê truyện Manga và truyện tranh học sinh Nhật Bản, chắc chắn bạn đã từng nhìn qua đồng phục cool ngầu này trong truyện tranh vài lần rồi.",
         "date": "25/10/2022"
     },
@@ -30,7 +30,7 @@ const data = [
     {
         "id": "5",
         "url" : "./imgfornew/5.png",
-        "header" : "Phong cách Dân Tổ đến từ Nhật Bổn - Racing Boy không có cửa ",
+        "header" : "Phong cách Dân Tổ đến từ Nhật Bổn - Racing Boy không có cửa",
         "desc" : "Bosozoku là tên gọi của các băng đảng đua xe từng gây chấn động xã hội Nhật Bản một thời và tạo ra làn sóng đua xe trên toàn quốc.",
         "date": "18/10/2022"
     }

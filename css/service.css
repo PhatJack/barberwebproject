@@ -175,4 +175,7 @@
     .sixth .service-logo {
         margin-left: 0px;
     }
+    .service-mustache{
+        margin: 0 auto;
+    }
 }
