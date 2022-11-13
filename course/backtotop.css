@@ -1,0 +1,30 @@
+.back-to-top{
+    height: inherit;
+    position: fixed;
+    /* background-color: aqua; */
+    /* top: 0px; */
+    right: 50px;
+    bottom: 50px;
+    transform: translateY(200%);
+    z-index: 102301;
+    background: transparent;
+    scroll-behavior: smooth;
+
+}
+.back-to-top button{
+    background: transparent !important;
+    border: none;
+}
+.back-to-top i{
+    font-size: 50px;
+    color: #9f7150;
+    /* cursor: pointer; */
+}
+.back-to-top.active{
+    transform: translateY(0%);
+    transition: all 0.5s linear;
+}
+.back-to-top.active i:hover{
+    color: #e68831e3;
+    transition: color 0.3s ease-in;
+}

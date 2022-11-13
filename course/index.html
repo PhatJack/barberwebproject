@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HỌC VIỆN BABER</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./scrollbar.css">
-    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/backtotop.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="backtotop.css">
 </head>
+
 <body>
     <!-- header -->
     <header class="nav" id="nav">
@@ -39,6 +42,7 @@
                     <li><a href="#"><i class="bi bi-cart"></i></a></li>
                 </ul>
             </div>
+
             <div class="hero">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
@@ -48,7 +52,7 @@
     </header>
     <div class="header">
         <div class="logo">
-            <img src="../img/logo2.png" alt="">
+            <img src="images/logo2.png" alt="">
         </div>
         <div class="wpb_wrapper">
             <div class="box_button">
@@ -125,6 +129,7 @@
                 </div>
             </div>
         </div>
+
         <div id="seminar" class="conttent_introduce3">
             <h1 class="title">HỘI THẢO</h1>
             <div class="img"></div>
@@ -139,7 +144,7 @@
                         <p>3 ngày <br> 9 giờ <br> Các ngày trong tuần</p>
                     </div>
                     <div class="price">2.000.000 VND</div>
-                    <div class="see-more"><a href="#">Xem thêm</a></div>
+                    <div class="see-more"><a href="seminar.html">Xem thêm</a></div>
                 </div>
                 <div class="img-seminar reveal fade-bottom">
                     <div class="title">
@@ -151,7 +156,7 @@
                         <p>3 ngày <br> 9 giờ <br> Các ngày trong tuần</p>
                     </div>
                     <div class="price">3.000.000 VND</div>
-                    <div class="see-more"><a href="#">Xem thêm</a></div>
+                    <div class="see-more"><a href="seminar.html">Xem thêm</a></div>
                 </div>
                 <div class="img-seminar reveal fade-right">
                     <div class="title">
@@ -163,7 +168,7 @@
                         <p>2 ngày <br> 5 giờ <br> Các ngày trong tuần</p>
                     </div>
                     <div class="price">1.000.000 VND</div>
-                    <div class="see-more"><a href="#">Xem thêm</a></div>
+                    <div class="see-more"><a href="seminar.css">Xem thêm</a></div>
                 </div>
             </div>
         </div>
@@ -182,7 +187,7 @@
                         <p>5 ngày <br> 5 Lớp <br> 25 Giờ </p>
                     </div>
                     <div class="price">5.000.000 VND</div>
-                    <div class="see-more"><a href="#">Xem thêm</a></div>
+                    <div class="see-more"><a href="intensive.html">Xem thêm</a></div>
                 </div>
                 <div class="img-seminar reveal fade-right">
                     <div class="title">
@@ -194,7 +199,7 @@
                         <p>18 ngày <br> 13 Lớp <br> 75 Giờ</p>
                     </div>
                     <div class="price">15.000.000 VND</div>
-                    <div class="see-more"><a href="#">Xem thêm</a></div>
+                    <div class="see-more"><a href="intensive.html">Xem thêm</a></div>
                 </div>
             </div>
         </div>
@@ -213,7 +218,7 @@
                         <p>75 ngày <br> 5 Lớp <br> 200 Giờ </p>
                     </div>
                     <div class="price">30.000.000 VND</div>
-                    <div class="see-more"><a href="#">Xem thêm</a></div>
+                    <div class="see-more"><a href="intensive.html">Xem thêm</a></div>
                 </div>
                 <div class="img-seminar reveal fade-bottom">
                     <div class="title">
@@ -272,29 +277,40 @@
                             <input type="text" class="form-input ">
                         </div>
                     </form>
-                    <button class="order"><span class="default">Đăng ký </span><span class="success">Đăng ký thành
-                            công<svg viewbox="0 0 12 10">
-                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                            </svg></span>
-                        <div class="box"></div>
-                        <div class="truck">
-                            <div class="back"></div>
-                            <div class="front">
-                                <div class="window"></div>
-                            </div>
-                            <div class="light top"></div>
-                            <div class="light bottom"></div>
-                        </div>
-                        <div class="lines"></div>
-                    </button>
+                    <button class="order" onclick="openForm()">Đăng ký </button>
                 </div>
             </div>
         </div>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <i  class='fa fa-close close cancel' onclick="closeForm()"></i>
+              <h1 class="text-center">XÁC NHẬN</h1>
+              <label class="confirm">Name:</label>
+          
+              <label class="confirm">Email:</label>
+          
+              <label class="confirm">SĐT:</label>
+
+              <label class="confirm">CHỌN KHÓA HỌC:</label>
+
+              <label class="confirm">NGÀY ƯA THÍCH:</label>
+
+              <label class="confirm">GHI CHÚ:</label>
+          
+              <button type="submit" class="btn">Xác nhận</button>
+             
+            </form>
+          </div>
+
         <div class="conttent_introduce6">
             <h3>CHI TIẾT MỌI THẮC MẮC</h3>
             <h4>Xin vui lòng liên hệ với chúng tôi qua email hoặc số điện thoại</h4>
             <p>info@babershop@gmail.com <br> +84 999 999 999</p>
         </div>
+
+
+
     </div>
     <!-- footer -->
     <footer class="footer container">
@@ -351,9 +367,9 @@
     </div>
 </body>
 <script src="js/script.js"></script>
-<script src="../js/backTotop.js"></script>
-<script src="../js/menuscroll.js"></script>
+<script src="js/backTotop.js"></script>
+<script src="js/menuscroll.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/register.js"></script>
+<!-- <script src="js/register.js"></script> -->
 
 </html>
