@@ -15,4 +15,11 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-//
+
+function openForm() {
+  document.getElementById("myForm").style.display = "flex";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
