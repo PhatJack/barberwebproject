@@ -1,23 +1,50 @@
-function changeHairStyle() {
-    var add = document.querySelector(".add")
-    var btn = document.querySelector(".btn")
-    var style = document.querySelector("#style")
-    if (add.style.display == "grid") {
-        console.log("grid")
-        add.style.display = "none"
-        btn.innerHTML = "Thêm"
-        style.scrollIntoView({
-            behavior: "smooth"
-        })
-    }
-    else {
-        console.log("none")
-        add.style.display = "grid"
-        btn.innerHTML = "Thu gọn"
-        add.scrollIntoView({
-            behavior: "smooth"
-        });
+function loadPage() {
+    var styleContainer = document.querySelector("#style .container")
+    for (var i = 0; i < parseInt(styleData.length / 2); i++){
+        styleContainer.innerHTML +=
+        `<div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="${styleData[i].url}" alt="${styleData[i].name}">
+                </div>
+                <div class="flip-box-back">
+                    <h2>${styleData[i].name}</h2>
+                    <p>${styleData[i].desc}</p>
+                </div>
+            </div>
+        </div>`
     }
 }
+function changeHairStyle() {
+    var style = document.querySelector("#style")
+    var styleContainer = document.querySelector("#style .container")
+    var btn = document.querySelector("#style .btn")
+    var wall = document.querySelector("#wall")
 
-
+    console.log(btn.innerHTML)
+    if (btn.innerHTML == 'Thêm')
+    {
+        for (var i = parseInt(styleData.length / 2); i < styleData.length; i++){
+            styleContainer.innerHTML +=
+            `<div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="${styleData[i].url}" alt="${styleData[i].name}">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>${styleData[i].name}</h2>
+                        <p>${styleData[i].desc}</p>
+                    </div>
+                </div>
+            </div>`
+        }
+        btn.innerHTML = "Thu gọn"
+        style.scrollIntoView(false)
+    }
+    else {
+        styleContainer.innerHTML = ``
+        loadPage()
+        style.scrollIntoView(true)
+        btn.innerHTML = "Thêm"
+    }
+}
