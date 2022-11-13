@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/AOS.css">
     <link rel="stylesheet" href="./css/slideshow.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/about_us.css">
@@ -25,9 +26,7 @@
     <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="./css/backtotop.css">
     <title>Barber Shop</title>
-
 </head>
-
 <body>
     <header class="nav container" id="nav">
         <div class="nav-container">
@@ -52,7 +51,53 @@
                     <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                     <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                    <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                    <li><a href="#"><i class="bi bi-cart" id="cartIcon"></i></a></li>
+                    <div class="cart">
+                        <div class="cart-title">
+                            <h1>Your Cart</h1>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 45.05$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                            </div>
+                            <!-- Remove the product in Cart -->
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 100$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                                <!-- Remove the product in Cart -->
+                            </div>
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 55$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                                <!-- Remove the product in Cart -->
+                            </div>
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-total">
+                            <div class="cart-total-title">Total</div>
+                            <div class="cart-total-price">0$</div>
+                        </div>
+                        <!-- Buy button -->
+                        <button type="button" class="btn-buy" value="Buy now">Buy Now</button>
+                        <!-- icon close -->
+                        <i class="bi bi-x" id="close-btn"></i>
+                    </div>
+                    <div class="over-lay"></div>
+                    <!-- Link CART to js -->
+                    <script src="./js/cart.js"></script>
                 </ul>
             </div>
             <div class="hero">
@@ -170,7 +215,8 @@
                 </div>
             </div>
             <div class="btn">
-                <span><a href="./ReadMoreFromNews/page1.html" target="_blank">Xem thêm</a></span>
+                <span><a href="./ReadMoreFromNews/page1.html" target="_blank" style="color: #9f7150;">Xem
+                        thêm</a></span>
             </div>
         </div>
     </div>
@@ -289,66 +335,62 @@
             </div>
         </div>
         <div class="shop-product reveal fade-bottom" style="animation-duration: 1.35s;">
-            <div class="product-content">
+            <script src="./js/shopProduct.js"></script>
+            <!-- <div class="product-content">
                 <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
+                    <img src="./img/4200.webp" alt="">
+                    <span class="sale-content">sale!</span>
                 </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
+                    <p class="product-name">$hello</p>
+                    <p class="product-price"><del class="salePrice">$90</del>$45</p>
+                <div class="buy-btn">
+                    <button>Add to cart</button>
+                </div>
             </div>
             <div class="product-content">
                 <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
+                    <img src="./img/4200.webp" alt="">
+                    <span class="sale-content">sale!</span>
                 </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
+                    <p class="product-name">$hello</p>
+                    <p class="product-price"><del class="salePrice">$90</del>$45</p>
+                <div class="buy-btn">
+                    <button>Add to cart</button>
+                </div>
             </div>
             <div class="product-content">
                 <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
+                    <img src="./img/4200.webp" alt="">
+                    <span class="sale-content">sale!</span>
                 </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
+                    <p class="product-name">$hello</p>
+                    <p class="product-price"><del class="salePrice">$90</del>$45</p>
+                <div class="buy-btn">
+                    <button>Add to cart</button>
+                </div>
             </div>
             <div class="product-content">
                 <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
+                    <img src="./img/4200.webp" alt="">
+                    <span class="sale-content">sale!</span>
                 </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
+                    <p class="product-name">$hello</p>
+                    <p class="product-price"><del class="salePrice">$90</del>$45</p>
+                <div class="buy-btn">
+                    <button>Add to cart</button>
+                </div>
             </div>
             <div class="product-content">
                 <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
+                    <img src="./img/4200.webp" alt="">
+                    <span class="sale-content">sale!</span>
                 </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
-            </div>
+                    <p class="product-name">$hello</p>
+                    <p class="product-price"><del class="salePrice">$90</del>$45</p>
+                <div class="buy-btn">
+                    <button>Add to cart</button>
+                </div>
+            </div> -->
         </div>
         <div class="shop-btn reveal fade-bottom" style="animation-duration: 1.45s;">
             <a href="#">More Product</a>
@@ -426,23 +468,7 @@
                         excepteur magna.
                     </p>
                 </div>
-            </div>
-            <div class="member">
-                <div class="member-photo">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="member-information" id="member-inf">
-                    <span class="member-name">Jack Phát</span>
-                    <span class="memeber-career">-Front-End Dev-</span>
-                    <p>Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est eu
-                        elit
-                        irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia.
-                        Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat
-                        amet
-                        excepteur magna.
-                    </p>
-                </div>
-            </div>
+            </div>  
         </div>
     </div>
     <div class="gallery-container container">
@@ -456,30 +482,7 @@
                 <img srcset="img/mustache3.png 5x" alt="">
             </div>
             <div class="gallery-content reveal fade-bottom" style="animation-duration: 1.15s;">
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
+                <script src="./js/dataGallery.js"></script>
             </div>
         </div>
     </div>
