@@ -346,12 +346,14 @@ html{
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 1px solid #555;
+  border: none;
   transition: 0.5s;
   cursor: pointer;
+  font-size: 25px;
 }
 .buttons button:hover {
-  background-color: #bac383;
+  background-color: #9f7150;
+  color: white;
 }
 /*
 @media (min-width: 768px) {

@@ -3,9 +3,9 @@ const nav = document.querySelector(".nav-container");
 const scrollHome = document.querySelector(".back-to-top");
 window.addEventListener("scroll", () => {
   const currentscroll = window.pageYOffset;
-  console.log(currentscroll);
+  // console.log(currentscroll);
   if (currentscroll > 120) {
-    console.log(currentscroll);
+    // console.log(currentscroll);
     nav.classList.add("active");
     scrollHome.classList.add("active");
   } else {
