@@ -6,13 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ablum</title>
-    <link rel="stylesheet" href="ablum.css">
+    <link rel="stylesheet" href="css/ablum.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="https://kit.fontawesome.com/908034d3b9.js" crossorigin="anonymous"></script>
-    <script src="ablum.js"></script>
-    <script src="styleData.js"></script>
+    <script src="./js/ablum.js"></script>
+    <script src="./js/styleData.js"></script>
+    <script src="./js/navbar.js"></script>
 </head>
 
 <body onload="loadPage()">
+    <header class="nav container" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="./index.html"><img src="../img/logo2.png" alt="5Logo"></a>
+            </div>
+            <div class="navbar">
+                <ul class="list">
+                    <li><a href="#news" class="text_change">Lifestyle</a></li>
+                    <li><a href="#product">Sản phẩm</a>
+                        <ul>
+                            <li class="temp">Wax</li>
+                            <li class="temp">Clothes</li>
+                            <li class="temp">Pomade</li>
+                            <li class="temp">The Mavericks</li>
+                        </ul>
+                    </li>
+                    <li><a href="./course/index.html" target="_blank">Học Barber</a></li>
+                    <li><a href="#">Đặt lịch</a></li>
+                </ul>
+                <ul class="social-icon">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="hero">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </div>
+    </header>
     <header id="header">
         <h1 class="neonText">Barber's Ablum</h1>
     </header>
@@ -103,5 +139,55 @@
             </div>
         </div>
     </div>
+    <footer class="footer container">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <span>Contact us</span>
+                    <ul>
+                        <li><i class="bi bi-geo-alt-fill"></i>66 Walker Road, Suite D, Great Virginia 22066</li>
+                        <li><i class="bi bi-envelope-fill"></i>Email: <a href="#">webfordeadline@gmail.com</a></li>
+                        <li><i class="bi bi-telephone-fill"></i>Tel:+84 344-248-396</li>
+                    </ul>
+                </div>
+                <div class="footer-more-content">
+                    <div class="form">
+                        <p>Get the notification</p>
+                        <input type="email" class="email-check" name="email" placeholder="Enter your email">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="appointment">
+                        <p>Make an appointment</p>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-youtube"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <span>Opening Hours</span>
+                    <ul>
+                        <li>Mon - Thu: 9am - 22pm</li>
+                        <li>Saturday: 10am - 21pm</li>
+                        <li>Sunday: By appointment</li>
+                        <li>Friday: For homeless people</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-mustache">
+                <img srcset="img/mustache3.png 2.5x" alt="">
+            </div>
+            <div class="last-line">
+                <p>Barber Shop &#169; 2022.All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
