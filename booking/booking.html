@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="booking.css">
+    <link rel="stylesheet" type="text/css" href="../navbar_footer/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Aldrich&family=Suez+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Đặt lịch</title>
+
+    <link rel="icon" type="image/icon" href="https://phatjack.github.io/barberwebproject/img/logo2.png">
+    </link>
+</head>
+
+<body>
+    <div class="header">
+        <img class="img" src="https://phatjack.github.io/barberwebproject/img/logo2.png">
+        <p>Địa chỉ: </p>
+        <p>SĐT: </p>
+        <p>Facebook: </p>
+    </div>
+    <div class="option-container">
+        <span class="option-items option-items-focus">Đặt lịch</span>
+        <span class="option-items">Dịch vụ</span>
+    </div>
+
+    <div class="appointment">
+        <center>
+            <h1 class="title">Đặt lịch</h1>
+        </center>
+
+        <p>Quý khách vui lòng cho biết thông tin</p>
+
+        <p class="text-warning">* Vui lòng nhập thông tin bắt buộc</p>
+
+        <div id="input">
+            <input type="text" id="ctm-name" class="input" placeholder="Họ tên" name="hoten" value="">
+        </div>
+
+        <div class="text-warning-1">Số điện thoại không hợp lệ</div>
+
+        <div id="input">
+            <input type="tel" id="ctm-phone-numb" maxlength="10" pattern="[0-9]{10}" required class="input"
+                placeholder="Số điện thoại" name="sdt" onchange="customer_class.phone_number_checking()">
+        </div>
+
+        <p>Tổng số khách</p>
+
+        <div class="numb-ctm-container">
+            <input type="number" id="numb-of-ctms" class="input" step="1" value="1" min="1" max="10"
+                onchange="number_of_customers.check_numb_of_ctms()"
+                onkeypress="return event.charCode>=48 && event.charCode<=57">
+            <div class="btn-container">
+                <div id="incr-btn">
+                    <i class="fa fa-angle-up" onclick="number_of_customers.incr_number()"></i>
+                </div>
+                <div id="decr-btn">
+                    <i class="fa fa-angle-down" onclick="number_of_customers.decr_number()"></i>
+                </div>
+            </div>
+        </div>
+        <p>Chi nhánh</p>
+        <p class="text-warning">* Chọn chi nhánh </p>
+        <div class="branch-option-container">
+            <div class="branch-options">
+                <label class="branch br-1" for="cn-1">
+                    <!-- <input type="radio" name="br" id="cn-1" class="branch"> -->
+                    <span class="branch-name-1">Số 39 Bùi Xương Trạch, Phường Khương Đình, Thanh Xuân, Hà Nội</span>
+                </label>
+                <iframe class="branch-map branch-map-1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14900.15014858869!2d105.80847592772226!3d20.991132376298626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac927791110f%3A0xc61b61561083adf!2zMzkgUC4gQsO5aSBYxrDGoW5nIFRy4bqhY2gsIEtoxrDGoW5nIMSQw6xuaCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1668046417376!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="branch-options">
+                <label class="branch br-2" for="cn-2">
+                    <!-- <input type="radio" name="br" id="cn-2" class="branch"> -->
+                    <span class="branch-name-2">QUẬN 4: 360B Bến Vân Đồn, P.1, Quận 4</span>
+                </label>
+                <iframe class="branch-map branch-map-2"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7317351853017!2d106.69118840233664!3d10.755146376228893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0e4cfa2279%3A0xf9af685247ed6f2b!2zMzYwQiBC4bq_biBWw6JuIMSQ4buTbiwgUGjGsOG7nW5nIDEsIFF14bqtbiA0LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1sen!2s!4v1668783580913!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="branch-options">
+                <label class="branch br-3" for="cn-3">
+                    <!-- <input type="radio" name="br" id="cn-3" class="branch"> -->
+                    <span class="branch-name-3">QUẬN 1: 77 Yersin, Quận 1, TP. HCM 1</span>
+                </label>
+                <iframe class="branch-map branch-map-3"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15678.266194232427!2d106.68823482551767!3d10.767850677236552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zUVXhuqxOIDE6IDc3IFllcnNpbiwgUXXhuq1uIDEsIFRQLiBIQ00gMQ!5e0!3m2!1sen!2s!4v1668046570381!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="branch-options">
+                <label class="branch br-4" for="cn-4">
+                    <!-- <input type="radio" name="br" id="cn-4" class="branch"> -->
+                    <span class="branch-name-4">QUẬN BÌNH THẠNH: 100 Bùi Đình Tuý, Bình Thạnh</span>
+                </label>
+                <iframe class="branch-map branch-map-4"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15676.209998533173!2d106.69870747552349!3d10.807291126808373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zUVXhuqxOIELDjE5IIFRI4bqgTkg6IDEwMCBCw7lpIMSQw6xuaCBUdcO9LCBCw6xuaCBUaOG6oW5o!5e0!3m2!1sen!2s!4v1668046608945!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p>Ngày đặt lịch</p>
+        <p class="text-warning">* Mục không được bỏ trống</p>
+        <div id="input"><input type="date" id="schedule-box"></div>
+        <p>Khung giờ</p>
+        <p class="text-warning">* Mục không được bỏ trống</p>
+        <div class="time-options-container">
+            <button class="time-options" value="7">7:00</button>
+            <button class="time-options" value="8">8:00</button>
+            <button class="time-options" value="9">9:00</button>
+            <button class="time-options" value="10">10:00</button>
+            <button class="time-options" value="11">11:00</button>
+            <button class="time-options" value="12">12:00</button>
+            <button class="time-options" value="13">13:00</button>
+            <button class="time-options" value="14">14:00</button>
+            <button class="time-options" value="15">15:00</button>
+            <button class="time-options" value="16">16:00</button>
+            <button class="time-options" value="17">17:00</button>
+            <button class="time-options" value="18">18:00</button>
+            <button class="time-options" value="19">19:00</button>
+            <button class="time-options" value="20">20:00</button>
+            <button class="time-options" value="21">21:00</button>
+        </div>
+        <!-- <p>Dịch vụ</p>
+                            <div id="input">
+                            <input type="search" list="service" class="nhap">
+                            </div>
+                            <datalist id="service">
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                            </datalist> -->
+        <p>Ghi chú</p>
+        <textarea style="height: 70px;" class="nhap note" placeholder="Ghi chú"></textarea>
+        <p></p>
+        <div id="input"><button onclick="booking()" id="submit-btn" type="submit"><i class="fa fa-calendar-plus"></i>
+                Đặt lịch</button></div>
+    </div>
+    <div class="services-container services-container-1">
+        <center>
+            <h1 class="title">Bảng giá dịch vụ</h1>
+        </center>
+        <ol><span class="services-name">Cắt</span>
+            <p>
+                <li><span>Kiểu Undercut</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Kiểu Slide Part</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Kiểu Pompadour</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Kiểu Mohican/span><span class="services-price">100,000đ</span><span
+                            class="services-duration">30 phút</span></li>
+        </ol>
+        <ol><span class="services-name">Uốn</span>
+            <p>
+                <li><span>Xoăn chữ J2</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Xoăn chữ J1</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Xoăn chữ S</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Xoăn chữ O</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+        </ol>
+        <ol><span class="services-name">Nhộm</span>
+            <p>
+                <li><span>Nhuộm đen phủ bạc</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Nhộm xám tro</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Nhộm nâu rêu</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Nhộm bạch kim</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+        </ol>
+        <ol><span class="services-name">Dịch vụ khác</span>
+            <p>
+                <li><span>Cạo mặt</span><span class="services-price">100,000đ</span><span class="services-duration">30
+                        phút</span></li>
+                <li><span>Đắp mặt dưỡng chất</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Gội xả thư giãn</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+                <li><span>Lấy ráy tai</span><span class="services-price">100,000đ</span><span
+                        class="services-duration">30 phút</span></li>
+        </ol>
+    </div>
+
+
+    <div class="ctm-info-container">
+        <div class="ctm-info-sub-container">
+            <ul>
+                <p>Thông tin cá nhân</p>
+                <li class="ctm-info ctm-name-info"></li>
+                <li class="ctm-info ctm-phone-numb-info"></li>
+                <li class="ctm-info numb-of-ctms-info"></li>
+            </ul>
+            <ul>
+                <p>Thông tin đặt lịch</p>
+                <li class="ctm-info branch-select-info"></li>
+                <li class="ctm-info schedule-info"></li>
+                <li class="ctm-info time-info"></li>
+                <li class="ctm-info note-content-info"></li>
+            </ul>
+            <center>
+                <button class="edit-btn" onclick="edit()">Chỉnh sửa</button>
+                <button class="confirm-btn" onclick="confirm()">Xác nhận</button>
+            </center>
+        </div>
+    </div>
+    <footer class="footer container">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <span>Contact us</span>
+                    <ul>
+                        <li><i class="bi bi-geo-alt-fill"></i>66 Walker Road, Suite D, Great Virginia 22066</li>
+                        <li><i class="bi bi-envelope-fill"></i>Email: <a href="#">webfordeadline@gmail.com</a></li>
+                        <li><i class="bi bi-telephone-fill"></i>Tel:+84 344-248-396</li>
+                    </ul>
+                </div>
+                <div class="footer-more-content">
+                    <div class="form">
+                        <p>Get the notification</p>
+                        <input type="email" class="email-check" name="email" placeholder="Enter your email">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="appointment">
+                        <p>Make an appointment</p>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-youtube"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <span>Opening Hours</span>
+                    <ul>
+                        <li>Mon - Thu: 9am - 22pm</li>
+                        <li>Saturday: 10am - 21pm</li>
+                        <li>Sunday: By appointment</li>
+                        <li>Friday: For homeless people</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-mustache">
+                <img srcset="img/mustache3.png 2.5x" alt="">
+            </div>
+            <div class="last-line">
+                <p>Barber Shop &#169; 2022.All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+    <script src="booking.js"></script>
+</body>
+
+</html>
