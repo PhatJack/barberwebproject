@@ -83,7 +83,6 @@ function showCurrentProduct() {
                         <img src="${currentProductData[i].url}"
                             alt="product">
                     </div>
-                    <a href="" class="buy-now">Mua ngay</a>
                     <!-- Mua Ngay -->
                 </div>
                 <div class="product-info">
