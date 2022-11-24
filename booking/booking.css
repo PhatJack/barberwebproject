@@ -3,7 +3,7 @@
   font-weight: bold;
   color: white;
 }
-html {
+html,body{
   background: no-repeat center center fixed
     url("https://c0.wallpaperflare.com/preview/987/555/718/adults-barber-barbershop-city.jpg");
   -webkit-background-size: cover;
@@ -12,10 +12,10 @@ html {
   background-size: cover;
   /* background-color: rgba(0,0,0,0.7); */
 }
-body {
+/* body {
   background: white;
   overflow-y: scroll;
-}
+} */
 p {
   font-weight: 200;
   font-size: 18px;

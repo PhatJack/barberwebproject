@@ -1,5 +1,5 @@
 let ourteam = document.querySelector(".our-team-content");
-const api_url = "./ApiJson/data.json";
+const api_url = "../ApiJson/data.json";
 //
 async function getData() {
     const response = await fetch(api_url);
@@ -21,8 +21,3 @@ async function getData() {
 }
 
 getData();
-// fetch(api_url)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//   });
