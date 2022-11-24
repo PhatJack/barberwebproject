@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="booking.css">
     <link rel="stylesheet" type="text/css" href="../navbar_footer/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../navbar_footer/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Aldrich&family=Suez+One&display=swap"
@@ -28,6 +27,39 @@
         <p>SĐT: </p>
         <p>Facebook: </p>
     </div> -->
+    <header class="nav container" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="./index.html"><img src="../img/logo2.png" alt="5Logo"></a>
+            </div>
+            <div class="navbar">
+                <ul class="list">
+                    <li><a href="#news" class="text_change">Lifestyle</a></li>
+                    <li><a href="#product">Sản phẩm</a>
+                        <ul>
+                            <li class="temp">Wax</li>
+                            <li class="temp">Clothes</li>
+                            <li class="temp">Pomade</li>
+                            <li class="temp">The Mavericks</li>
+                        </ul>
+                    </li>
+                    <li><a href="./course/index.html" target="_blank">Học Barber</a></li>
+                    <li><a href="#">Đặt lịch</a></li>
+                </ul>
+                <ul class="social-icon">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="hero">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </div>
+    </header>
     <div class="option-container">
         <span class="option-items option-items-focus">Đặt lịch</span>
         <span class="option-items">Dịch vụ</span>
@@ -52,7 +84,6 @@
             <input type="tel" id="ctm-phone-numb" maxlength="10" pattern="[0-9]{10}" required class="input"
                 placeholder="Số điện thoại" name="sdt" onchange="customer_class.phone_number_checking()">
         </div>
-
         <p>Tổng số khách</p>
 
         <div class="numb-ctm-container">
@@ -222,7 +253,9 @@
             </center>
         </div>
     </div>
-    <script src="booking.js"></script>
 </body>
+<script src="booking.js"></script>
+<script src="../navbar_footer/js/navbar.js"></script>
+<script src="../navbar_footer/js/menuscroll.js"></script>
 
 </html>
