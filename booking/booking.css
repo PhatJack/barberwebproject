@@ -3,6 +3,9 @@
   font-weight: bold;
   color: white;
 }
+a {
+  text-decoration: none;
+}
 html {
   background: no-repeat center center fixed
     url("https://c0.wallpaperflare.com/preview/987/555/718/adults-barber-barbershop-city.jpg");
@@ -68,12 +71,13 @@ textarea {
   background: rgb(25, 25, 25);
 }
 .option-container {
+  position: absolute;
   display: flex;
   justify-content: space-evenly;
   margin-left: 50%;
   transform: translate(-50%, 200px);
-  width: 420px;
-  height: 150px;
+  /* width: 420px; */
+  /* height: 150px; */
 }
 .option-items {
   height: 80px;
@@ -87,6 +91,7 @@ textarea {
   cursor: pointer;
   box-sizing: border-box;
   transition: 0.3s ease-out;
+  margin: 0 20px;
 }
 .option-items:hover {
   margin-top: 10px;
@@ -292,7 +297,7 @@ textarea {
   inset: 0;
   margin-left: 50%;
   transform: translate(-50%, 350px);
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   box-shadow: 5px 5px 10px 0px black;
 
   animation: animation;
