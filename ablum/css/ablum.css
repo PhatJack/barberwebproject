@@ -69,6 +69,11 @@ html {
   color: #9f7150;
   font-size: 30px;
   font-weight: 1000;
+  /* margin: 0 auto; */
+  margin-bottom: 18px;
+}
+.title img{
+  margin: 0 auto;
 }
 #style .container {
   display: grid;

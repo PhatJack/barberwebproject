@@ -23,7 +23,7 @@ body {
   background: #2e2925;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .footer-logo {
@@ -117,18 +117,18 @@ ul li {
   padding-left: 10px;
 }
 
-.footer-more-content .appointment {
+.footer-more-content .appointment-btn {
   background-color: #50443a;
   text-align: center;
   padding: 15px;
   margin-bottom: 15px;
 }
 
-.appointment:focus {
+.appointment-btn:focus {
   outline: none;
 }
 
-.appointment {
+.appointment-btn {
   text-transform: uppercase;
   float: left;
   display: block;
@@ -142,7 +142,7 @@ ul li {
   cursor: pointer;
 }
 
-.appointment::after {
+.appointment-btn::after {
   content: "";
   background-color: transparent;
   position: absolute;
@@ -155,7 +155,7 @@ ul li {
   z-index: -1;
 }
 
-.appointment:hover::after {
+.appointment-btn:hover::after {
   opacity: 1;
   background-color: #d1a27c;
   top: 0;
@@ -164,13 +164,13 @@ ul li {
   bottom: 0;
 }
 
-.appointment,
-.appointment:after {
+.appointment-btn,
+.appointment-btn:after {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.appointment:hover {
+.appointment-btn:hover {
   border: 4px solid #d1a27c;
 }
 

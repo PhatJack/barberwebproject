@@ -5,7 +5,6 @@ let cart = document.querySelector(".cart");
 let closebtn = document.getElementById("close-btn");
 let removeCart = document.querySelector("#cart-remove");
 let overlay = document.querySelector(".over-lay");
-
 //Close button 
 
 cartIcon.onclick = () => {
@@ -16,7 +15,10 @@ closebtn.onclick = () => {
   cart.classList.remove("active");
   overlay.style.display = "none";
 };
-
+overlay.onclick = () => {
+  cart.classList.remove("active");
+  overlay.style.display = "none";
+}
 //Cart working JS
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", ready);
@@ -73,6 +75,7 @@ function updateTotal() {
             var priceElement = cartBox.getElementsByClassName("cart-price")[0];
             var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
             var price = parseFloat(priceElement.innerHTML.replace("$", ""));
+            // console.log(price);
             var quantity = parseFloat(quantityElement.value);
             sum += price * quantity;
     // console.log(price * quantity);

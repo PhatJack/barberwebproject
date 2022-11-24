@@ -480,6 +480,7 @@ hr {
 .form-container {
   max-width: 500px;
   padding: 10px;
+  border-radius: 10px;
   background-color: gray;
   margin: auto;
 }

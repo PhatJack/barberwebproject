@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT INFORMATION</title>
+    <link rel="stylesheet" href="/css/product-info.css">
+</head>
+
+<body onload="loadPageProductInfo()">
+    <div id="product-information">
+        <section class="product">
+            <div class="container">
+                <div class="product-content">
+                    <div class="product-content-left">
+                        <div class="product-content-left-img">
+                            <img src="" alt="Product image">
+                        </div>
+                    </div>
+                    <div class="product-content-right">
+                        <div class="product-name">
+                            <h2>PROSPECTORS GOLD RUSH</h2>
+                        </div>
+                        <div class="product-price">
+                            <p>390.000 VND</p>
+                        </div>
+                        <!-- <div class="product-size">
+                            <span>SIZE: </span>
+                            <div class="size">
+                                <span onclick="choose_size(0)">130 gram</span>
+                                <span onclick="choose_size(1)">210 gram</span>
+                            </div>
+                        </div> -->
+                        <div class="product-quantity">
+                            <p>SỐ LƯỢNG: </p>
+                            <input onchange="change_price(this)" type="number" value="1" min="1">
+                        </div>
+                        <!-- <p class="choose_size" style="color: red;">Vui lòng chọn size</p> -->
+                        <div class="product-button">
+                            <button>ADD TO CART</button>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-info-title">
+                                <div onclick="change_info(0)" class="product-info-title-name">
+                                    <p>Thương hiệu</p>
+                                </div>
+                                <div onclick="change_info(1)" class="product-info-title-name default_pro_info_title">
+                                    <p>Chi tiết</p>
+                                </div>
+                                <div onclick="change_info(2)" class="product-info-title-name">
+                                    <p>Đánh giá</p>
+                                </div>
+                            </div>
+                            <div class="product-info-content">
+                                <div class="product-info-content-brand" style="display: none;">
+                                    Thương hiệu Reuzel <br><br>
+                                    Câu chuyện của Reuzel Pomade đến từ một con hẻm với hai chàng trai yêu thích nghề
+                                    cắt tóc nam – Leen & Bertus. Hai người có niềm đam mê lớn lao từ khi còn rất nhỏ,
+                                    được sống trong nền văn hóa với nhạc rock, sự bụi bặm của giới lao động Rotterdam
+                                    <br><br>
+                                    Những người đàn ông
+                                    <br><br>
+                                    Leen và Bertus muốn cắt cho mọi quý ông kiểu tóc hoàn hảo nhất, những kiểu
+                                    “porkchop” phù hợp. Tình yêu với nét đẹp truyền thống cùng những ý tưởng mới đã bắt
+                                    đầu cho những
+                                    sự “nổi loạn”
+                                    <br><br>
+                                    Tiến lên
+                                    <br><br>
+                                    Leen và Bertus đã thành lập nên một trường đào tạo của riêng mình, mang đến những
+                                    kiểu tóc, phong cách bóng bẩy
+                                    tới những ai mong muốn có mái tóc đỉnh nhất. Họ cũng có dòng sản phẩm của riêng mình
+                                    – đó chính là Reuzel Pomade. Reuzel xuất hiện với thông điệp rằng dù xu hướng có
+                                    thay đổi thì phong cách và bản lĩnh của một quý ông vẫn giữ mãi như vậy.
+                                </div>
+                                <div class="product-info-content-details">
+                                    <table>
+                                        <tr>
+                                            <td>Tổng quan sản phẩm:</td>
+                                            <td>Một dòng sản phẩm gốc dầu xịn xò với mức giá cực kỳ hợp lý cho những
+                                                newbie trong làng chơi pomade.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Mùi hương:</td>
+                                            <td>mùi gỗ nam tính, tươi mới</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Độ giữ nếp: </td>
+                                            <td>8.5/10 dễ dàng restyle </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Cảm giác khi apply:</td>
+                                            <td>pomade gốc dầu có chứa tinh chất cây dầu gai cùng các loại vitamin như:
+                                                Vitamin E, Vitamin A</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Độ bóng:</td>
+                                            <td> tự nhiên, thích hợp sử dụng hàng ngày</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Kiểu tóc phù hợp:</td>
+                                            <td>Slickback, Sidepart, Comb Over, Pompadour,...</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Khả năng gội rửa:</td>
+                                            <td>dễ dàng trong lần gội đầu tiên.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="product-info-content-review" style="display: none;">
+                                    Scent (mùi hương):
+
+                                    Mình sẽ gọi nó là mùi ông già. Nó là mùi của sự hoài cổ, xạ hương và sạch sẽ. Đó là
+                                    cách
+                                    tốt nhất tôi có thể tổng hợp những gì tôi nhận được từ pomade.
+
+                                    Texture
+
+                                    Chất sáp rất mịn, nhưng nó dày hơn một chút. Bạn chắc chắn có thể nói rằng nó là một
+                                    loại pomade gốc nước từ độ ẩm của nó, tuy nhiên, có một độ mỏng do các thành phần
+                                    dầu.
+
+                                    Application (khả năng apply lên tóc)
+
+                                    2-3 đốt đầu ngón tay để giữ tóc chắc chắn. Nó mượt mà và dễ dàng chải cả trên tóc
+                                    ướt và
+                                    khô.
+
+                                    Slickness ( khả năng chải )
+
+                                    Hiệu suất cả ngày vững chắc từ các Prospectors. Độ bóng mượt không ở bất kỳ đâu gần
+                                    với
+                                    một loại pomade gốc dầu, nhưng bạn sẽ có được tất cả các vết bẩn được thuần hóa và
+                                    giải
+                                    quyết. Tuy nhiên, những sợi tóc ngắn hơn của tôi đã nhô ra.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-related">
+            <div class="product-related-title">
+                <p>SẢN PHẨM LIÊN QUAN</p>
+            </div>
+            <div class="product-related-content">
+                <div class="slider">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 arrow-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg></p>
+                </div>
+                <!-- <div class="product-related-item">
+                    <img src="https://4rau.vn/upload/sanpham/prospectors_pomade_iron_ore_front_14oz_grande0720_250x250.jpg"
+                        alt="">
+                    <h3>PROSPECTORS IRON ORE</h3>
+                    <p>
+                        Giá:
+                        <span>390.000 VND</span>
+                    </p>
+                </div> -->
+                <div class="product-related-item">
+                    <img src="https://4rau.vn/upload/sanpham/prospectors_pomade_iron_ore_front_14oz_grande0720_250x250.jpg"
+                        alt="">
+                    <h3>PROSPECTORS IRON ORE</h3>
+                    <p>
+                        Giá:
+                        <span>390.000 VND</span>
+                    </p>
+                </div>
+                <div class="product-related-item">
+                    <img src="https://4rau.vn/upload/sanpham/prospectors_pomade_iron_ore_front_14oz_grande0720_250x250.jpg"
+                        alt="">
+                    <h3>PROSPECTORS IRON ORE</h3>
+                    <p>
+                        Giá:
+                        <span>390.000 VND</span>
+                    </p>
+                </div>
+                <div class="product-related-item">
+                    <img src="https://4rau.vn/upload/sanpham/prospectors_pomade_iron_ore_front_14oz_grande0720_250x250.jpg"
+                        alt="">
+                    <h3>PROSPECTORS IRON ORE</h3>
+                    <p>
+                        Giá:
+                        <span>390.000 VND</span>
+                    </p>
+                </div>
+                <div class="product-related-item">
+                    <img src="https://4rau.vn/upload/sanpham/prospectors_pomade_iron_ore_front_14oz_grande0720_250x250.jpg"
+                        alt="">
+                    <h3>PROSPECTORS IRON ORE</h3>
+                    <p>
+                        Giá:
+                        <span>390.000 VND</span>
+                    </p>
+                </div>
+                <div class="slider">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 arrow-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="../script.js"></script>
+
+</html>
