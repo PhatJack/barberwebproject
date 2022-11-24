@@ -8,15 +8,18 @@
 }
 
 .active.fade-bottom {
-    animation: fade-bottom 1s linear;
+    animation: fade-bottom 1s linear forwards;
+    animation-iteration-count: 1;
 }
 
 .active.fade-left {
-    animation: fade-left 1s linear;
+    animation: fade-left 1s linear forwards;
+    animation-iteration-count: 1;
 }
 
 .active.fade-right {
-    animation: fade-right 1s linear;
+    animation: fade-right 1s linear forwards;
+    animation-iteration-count: 1;
 }
 
 /* Animation On Scroll  */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>List-product</title>
+    <link rel="stylesheet" href="../css/category.css">
+</head>
+
+<body onload="loadPageCategory()">
+    <div class="headline">
+        <div class="slideshow-container">
+            <div class="mySlides fade"></div>
+            <div class="mySlides fade"></div>
+            <div class="mySlides fade"></div>
+            <div class="mySlides fade"></div>
+            <h1>SẢN PHẨM</h1>
+        </div>
+        <div id="wrapper">
+            <div class="tool">
+                <div class="filter">
+                    <form action="">
+                        <label>Phân loại:</label>
+                        <select name="category" class="filter category" onchange="filterByCategory()">
+                            <option checked value="ALL">ALL</option>
+                            <option value="POMADE">POMADE</option>
+                            <option value="SKIN CARE">SKIN CARE</option>
+                            <option value="HAIR & BODY">HAIR & BODY</option>
+                            <option value="BEARD & SHAVE">BEARD & SHAVE</option>
+                        </select> <br>
+                        <label>Giá:</label>
+                        <input type="text" class="filter price min" placeholder="&#8363; TỪ">
+                        <span>-</span>
+                        <input type="text" class="filter price max" onchange="filterByPrice()"
+                            placeholder=" &#8363; ĐẾN">
+                    </form>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="tìm kiếm">
+                    <button class="search-btn" onclick="searchByName()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="category">
+                <ul class="products">
+                </ul>
+            </div>
+        </div>
+        <div class="pagination">
+        </div>
+</body>
+<script src="../script.js"></script>
+<script src="../product.js"></script>
+
+</html>

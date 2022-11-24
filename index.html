@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/AOS.css">
     <link rel="stylesheet" href="./css/slideshow.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/about_us.css">
@@ -25,7 +26,6 @@
     <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="./css/backtotop.css">
     <title>Barber Shop</title>
-
 </head>
 
 <body>
@@ -36,23 +36,75 @@
             </div>
             <div class="navbar">
                 <ul class="list">
-                    <li><a href="#news" class="text_change">Lifestyle</a></li>
+                    <li><a href="./ablum/album.html" class="text_change" target="_blank">Album</a></li>
                     <li><a href="#product">Sản phẩm</a>
                         <ul>
                             <li class="temp">Wax</li>
-                            <li class="temp">Clothes</li>
+                            <li class="temp">Clothes
+                                <!-- <ul>
+                                    <li class="temp">Shirt</li>
+                                    <li class="temp">Short</li>
+                                    <li class="temp">Jacket</li>
+                                </ul> -->
+                            </li>
                             <li class="temp">Pomade</li>
                             <li class="temp">The Mavericks</li>
                         </ul>
                     </li>
                     <li><a href="./course/index.html" target="_blank">Học Barber</a></li>
-                    <li><a href="#">Đặt lịch</a></li>
+                    <li><a href="./booking/booking.html">Đặt lịch</a></li>
                 </ul>
                 <ul class="social-icon">
                     <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                     <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                    <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                    <li><a href="#"><i class="bi bi-cart" id="cartIcon"></i></a></li>
+                    <div class="cart">
+                        <div class="cart-title">
+                            <h1>Your Cart</h1>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 45.05$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                            </div>
+                            <!-- Remove the product in Cart -->
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 100$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                                <!-- Remove the product in Cart -->
+                            </div>
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 55$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                                <!-- Remove the product in Cart -->
+                            </div>
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-total">
+                            <div class="cart-total-title">Total</div>
+                            <div class="cart-total-price">0$</div>
+                        </div>
+                        <!-- Buy button -->
+                        <button type="button" class="btn-buy" value="Buy now">Buy Now</button>
+                        <!-- icon close -->
+                        <i class="bi bi-x" id="close-btn"></i>
+                    </div>
+                    <div class="over-lay"></div>
+                    <!-- Link CART to js -->
+                    <script src="./js/cart.js"></script>
                 </ul>
             </div>
             <div class="hero">
@@ -170,7 +222,8 @@
                 </div>
             </div>
             <div class="btn">
-                <span><a href="./ReadMoreFromNews/page1.html" target="_blank">Xem thêm</a></span>
+                <span><a href="./ReadMoreFromNews/newspage.html" target="_blank" style="color: #9f7150;">Xem
+                        thêm</a></span>
             </div>
         </div>
     </div>
@@ -289,66 +342,7 @@
             </div>
         </div>
         <div class="shop-product reveal fade-bottom" style="animation-duration: 1.35s;">
-            <div class="product-content">
-                <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
-            </div>
-            <div class="product-content">
-                <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
-            </div>
-            <div class="product-content">
-                <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
-            </div>
-            <div class="product-content">
-                <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
-            </div>
-            <div class="product-content">
-                <div class="product-img">
-                    <img src="./img/Product/product1.png" alt="">
-                    <div class="buy-btn">
-                        <button>Buy now</button>
-                    </div>
-                </div>
-                <p class="product-name">
-                    Barber Pomade Colmav (black)
-                </p>
-                <p class="product-price">$45.00</p>
-            </div>
+            <script src="./js/shopProduct.js"></script>
         </div>
         <div class="shop-btn reveal fade-bottom" style="animation-duration: 1.45s;">
             <a href="#">More Product</a>
@@ -363,86 +357,7 @@
             <img src="img/mustache3.png" alt="">
         </div>
         <div class="our-team-content reveal fade-bottom" style="animation-duration: 1.1s;">
-            <div class="member">
-                <div class="member-photo">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="member-information">
-                    <span class="member-name">Jack Phát</span>
-                    <span class="memeber-career">-Front-End Dev-</span>
-                    <p>Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est eu
-                        elit
-                        irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia.
-                        Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat
-                        amet
-                        excepteur magna.
-                    </p>
-                </div>
-            </div>
-            <div class="member">
-                <div class="member-photo">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="member-information">
-                    <span class="member-name">Jack Phát</span>
-                    <span class="memeber-career">-Front-End Dev-</span>
-                    <p>Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est eu
-                        elit
-                        irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia.
-                        Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat
-                        amet
-                        excepteur magna.
-                    </p>
-                </div>
-            </div>
-            <div class="member">
-                <div class="member-photo">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="member-information">
-                    <span class="member-name">Jack Phát</span>
-                    <span class="memeber-career">-Front-End Dev-</span>
-                    <p>Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est eu
-                        elit
-                        irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia.
-                        Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat
-                        amet
-                        excepteur magna.
-                    </p>
-                </div>
-            </div>
-            <div class="member">
-                <div class="member-photo">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="member-information">
-                    <span class="member-name">Jack Phát</span>
-                    <span class="memeber-career">-Front-End Dev-</span>
-                    <p>Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est eu
-                        elit
-                        irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia.
-                        Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat
-                        amet
-                        excepteur magna.
-                    </p>
-                </div>
-            </div>
-            <div class="member">
-                <div class="member-photo">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="member-information" id="member-inf">
-                    <span class="member-name">Jack Phát</span>
-                    <span class="memeber-career">-Front-End Dev-</span>
-                    <p>Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est eu
-                        elit
-                        irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia.
-                        Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat
-                        amet
-                        excepteur magna.
-                    </p>
-                </div>
-            </div>
+            <script src="./js/memberData.js"></script>
         </div>
     </div>
     <div class="gallery-container container">
@@ -456,30 +371,7 @@
                 <img srcset="img/mustache3.png 5x" alt="">
             </div>
             <div class="gallery-content reveal fade-bottom" style="animation-duration: 1.15s;">
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/4200.webp" alt="">
-                </div>
+                <script src="./js/dataGallery.js"></script>
             </div>
         </div>
     </div>
@@ -540,7 +432,6 @@
 <script>
     AOS.init();
 </script> -->
-<script src="./js/navigationbar.js"></script>
 <script src="./js/slideshow.js"></script>
 <script src="./js/navbar.js"></script>
 <script src="./js/AOS.js"></script>

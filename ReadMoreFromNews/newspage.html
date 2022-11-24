@@ -28,7 +28,7 @@
             </div>
             <div class="navbar">
                 <ul class="list">
-                    <li><a href="#news" class="text_change">Lifestyle</a></li>
+                    <li><a href="#news" class="text_change">Album</a></li>
                     <li><a href="#product">Sản phẩm</a>
                         <ul>
                             <li class="temp">Wax</li>
@@ -66,14 +66,17 @@
         <div class="news-container">
             <div class="col-left">
                 <ul class="list-news">
-                    <script src="./datapage3.js"></script>
-                    <script src="./page1.js"></script>
+                    <script src="./datapage1.js"></script>
                 </ul>
                 <div class="pagination">
                     <ul class="pages">
-                        <li>1</li>
-                        <li>2</li>
-                        <li class="active">3</li>
+                        <li class="prev" id="prevBtn"><i class="bi bi-arrow-left"></i></li>
+                        <li class="temp">
+                            <ul class="list-num-pages">
+                                <li class="pagenum active"><a> 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="next" id="nextBtn"><i class="bi bi-arrow-right"></i></li>
                     </ul>
                 </div>
             </div>
@@ -148,8 +151,12 @@
         <button onclick="scrollToTop()" id="myBtn"><i class="bi bi-arrow-up-circle-fill"></i></button>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../js/menuscroll.js"></script>
 <script src="../js/backTotop.js"></script>
-<script src="./pagination.js"></script>
+<script src="./page1.js"></script>
+<!-- <script src="./pagination.js"></script> -->
 
 </html>
