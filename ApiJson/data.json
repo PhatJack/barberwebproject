@@ -1,26 +1,26 @@
 [
     {
-        "img":"./home/img/4200.webp",
+        "img":"./home/img/portrait/portrait1.jpg",
         "name": "Jack Phat",
-        "career": "Barber",
+        "career": "Home page",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     },
     {
-        "img":"./home/img/4200.webp",
-        "name": "Jack Phat",
-        "career": "Barber",
+        "img":"./home/img/portrait/portrait2.jpg",
+        "name": "Ngoc Thuc",
+        "career": "Product",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     },
     {
-        "img":"./home/img/4200.webp",
-        "name": "Jack Phat",
-        "career": "Barber",
+        "img":"./home/img/portrait/portrait3.jpg",
+        "name": "Bui Bao",
+        "career": "Album",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     },
     {
-        "img":"./home/img/4200.webp",
-        "name": "Jack Phat",
-        "career": "Barber",
+        "img":"./home/img/portrait/portrait4.jpg",
+        "name": "Minh Thuan va Nhat Huy",
+        "career": "Course and Booking",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     }
 ]

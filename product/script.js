@@ -208,33 +208,29 @@ function loadPageProductInfo() {
     numberWithCommas(product.price) + " VND";
 }
 //mouse-move
-$(function () {
-  var zoom = function (elm) {
-    elm
-      .on("mouseover", function () {
-        $(this).children(".img").css({ transform: "scale(2)" });
-      })
-      .on("mouseout", function () {
-        $(this).children(".img").css({ transform: "scale(1)" });
-      })
-      .on("mousemove", function (e) {
-        $(this)
-          .children(".img")
-          .css({
-            "transform-origin":
-              ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
-              "% " +
-              ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
-              "%",
-          });
-      });
-  };
+let item = document.querySelector(".product-content-left-img");
+function scaleImg(index){
+    index.onmouseover = (event) => {
+        let temp = event.target;
+        temp.style.transform = "scale(2)";
+    };
+    index.onmouseout = (event) => {
+        let temp = event.target;
+        temp.style.transform = "scale(1)";
+    };
+    index.addEventListener("mousemove", (event) =>  {
+        let temp = event.target;
+            var x = event.clientX;
+            var y = event.clientY;
+            var xPoint = ((x - item.offsetLeft) / item.clientWidth) * 100;
+            var yPoint = ((y - item.offsetTop) / item.clientHeight) * 100;
+            // item.style.transform = "rotate(90deg)";
+            temp.style.transformOrigin = xPoint + "% " + yPoint + "%";
+            console.log(xPoint, yPoint);
+        });
+    
+}
 
-  $(".item").each(function () {
-    $(this)
-      .append('<div class="img"></div>')
-      .children(".img")
-      .css({ "background-image": "url(" + $(this).data("image") + ")" });
-    zoom($(this));
-  });
-});
+scaleImg(item);
+
+
