@@ -10,11 +10,10 @@ a {
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 body {
-  background-image: url(images/body.jpg);
+  background-image: url(../images/body.jpg);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -22,7 +21,7 @@ body {
 /* header */
 .header {
   position: relative;
-  background-image: url(images/header.jpg);
+  background-image: url(../images/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -57,9 +56,9 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255);
   transition: 0.5s;
-} 
+}
 
- .box_button:hover p {
+.box_button:hover p {
   background-color: #dfa450;
   border-color: #dfa450;
   transform: scale(1.1);
@@ -90,7 +89,7 @@ body {
 }
 
 .wrapper-conttent .img {
-  background-image: url(images/swirls-2.svg);
+  background-image: url(../images/swirls-2.svg);
   background-repeat: no-repeat;
   width: 200px;
   height: 40px;
@@ -152,7 +151,7 @@ body {
 
 .img-seminar {
   flex-basis: 30%;
-  background-image: url("images/bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   height: 460px;
@@ -206,7 +205,7 @@ hr {
   margin-top: 30px;
   border: 0px solid #000;
   border-radius: 10px;
-  background: rgb(255, 228, 196)
+  background: rgb(255, 228, 196);
 }
 
 .see-more a {
@@ -223,7 +222,7 @@ hr {
 /* conttent_introduce5 */
 .conttent_introduce5 {
   width: 100%;
-  background-image: url(images/bg-conttent_introduce5.jpg);
+  background-image: url(../images/bg-conttent_introduce5.jpg);
 }
 
 .sign-up {
@@ -272,17 +271,17 @@ hr {
   background: rgba(162, 168, 182, 0.12);
   margin: 10px;
 }
-.order{
-  padding:10px 35px;
+.order {
+  padding: 10px 35px;
   margin: 0 auto;
   border-radius: 15px;
   position: relative;
-  left:35%;
+  left: 35%;
   font-size: 20px;
-  background-color:rgb(255, 228, 196) ;
+  background-color: rgb(255, 228, 196);
   transition: 0.5s;
 }
-.order:hover{
+.order:hover {
   background: #dfa450;
   outline: 2px solid #dfa450;
 }
@@ -397,7 +396,6 @@ hr {
   }
 }
 
-
 /* popup form */
 .form-popup {
   display: none;
@@ -405,7 +403,7 @@ hr {
   top: 0;
   bottom: 0;
   right: 0;
-  left:0;
+  left: 0;
   justify-content: center;
   align-items: center;
   z-index: 100000000;
@@ -419,12 +417,12 @@ hr {
   background-color: gray;
   margin: auto;
 }
-.confirm{
+.confirm {
   display: block;
-  margin:10px;
+  margin: 10px;
 }
 /* Full-width input fields */
-.form-container  {
+.form-container {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -433,44 +431,45 @@ hr {
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   font-size: 20px;
   width: 100%;
-  margin:30px 0px 10px;
+  margin: 30px 0px 10px;
   opacity: 0.8;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
 /* Add a red background color to the cancel button */
-form{
+form {
   position: relative;
 }
 .form-container .cancel {
   position: absolute;
-  top:6px;
-  right:13px;
+  top: 6px;
+  right: 13px;
   font-size: 20px;
   color: #000;
   cursor: pointer;
 }
-.form-container .cancel:hover{
-color:#dfa450 ;
+.form-container .cancel:hover {
+  color: #dfa450;
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
-
