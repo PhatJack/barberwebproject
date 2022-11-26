@@ -68,6 +68,32 @@ prevBtn.addEventListener("click", () => {
   getNewsData();
   console.log(start, end);
 });
+$(document).ready(function () {
+  $("#nextBtn").click(function () {
+    $(".temp .list-num-pages")
+      .find(".pagenum.active")
+      .next()
+      .addClass("active");
+    $(".temp .list-num-pages")
+      .find(".pagenum.active")
+      .prev()
+      .removeClass("active");
+  });
+  $("#prevBtn").click(function () {
+    $(".temp .list-num-pages")
+      .find(".pagenum.active")
+      .prev()
+      .addClass("active");
+    $(".temp .list-num-pages")
+      .find(".pagenum.active")
+      .next()
+      .removeClass("active");
+  });
+  // $('.pagenum.active').addClass("active").siblings().removeClass("active");
+  $('.pagenum').click(function(){
+    $('li.pagenum').addClass("active").siblings().removeClass("active");
+  })
+});
 
 renderListPage();
 changePage();

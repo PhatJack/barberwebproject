@@ -137,13 +137,14 @@ ul li {
 }
 
 .pagination .pages > li:not(.temp){
-    height: 35px;
+    height: 40px;
+    width: 40px;
     color: black;
-    padding: 5px;
+    padding: 6px 7px;
     border: 1px solid #d5d5d5;
     margin: 0 10px;
     border-radius: 20px;
-    font-size: 22px;
+    font-size: 24px;
 }
 .pagination .pages li ul{
     display: flex;
@@ -154,12 +155,13 @@ ul li {
 }
 .pagination .pages li ul > li{
     font-size: 22px;
-    height: 35px;
+    height: 40px;
+    width: 40px;
     color: black;
-    padding: 5px;
+    padding: 7px 10px;
     border: 1px solid #d5d5d5;
     margin: 0 10px;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 .pagination .pages li ul > li.active {
     background-color: #000;

@@ -436,4 +436,3 @@ function edit(){
     $('.ctm-info-container').hide();
     $('.ctm-info-sub-container').slideUp();
 }
-
