@@ -32,8 +32,8 @@
 }
 
 .our-team-content .member .member-photo{
-    max-width: 320px;
-    height: 500px;
+    max-width: 350px;
+    height: 550px;
     /* margin-right: ; */
 }
 .our-team-content .member .member-photo img{
@@ -82,7 +82,7 @@
 } */
 .member-information {
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@
 }
 
 .member-information .memeber-career {
-    font-size: 12px;
+    font-size: 18px;
     color: #bc865f;
     line-height: calc(19/15);
     margin-top: 10px;
