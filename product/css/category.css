@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ul {
+  list-style-type: none;
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -104,7 +106,7 @@ body {
 }
 
 .tool .filter form label {
-  color:black;
+  color: black;
   font-weight: 900;
   display: flex;
   flex-direction: row;
@@ -186,7 +188,7 @@ ul.products li:hover .product-top .product-thumb img {
   opacity: 0.85;
 } */
 
-ul.products li:hover .product-thumb{
+ul.products li:hover .product-thumb {
   border: 2px solid black;
 }
 
@@ -206,7 +208,7 @@ ul.products li .product-info a.product-cat {
   padding: 3px 0px;
   text-transform: uppercase;
   font-weight: bold;
-} 
+}
 
 ul.products li .product-info a.product-name {
   color: black;
@@ -222,7 +224,7 @@ ul.products li .product-info a.product-name {
 
 ul.products li .product-info .product-price {
   color: #d81e0a;
-  
+
   font-weight: 600;
   font-size: 25px;
 }
