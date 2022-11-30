@@ -5,7 +5,9 @@
     padding: 0 10%;
 }
 .our-team .our-team-heading{
+    width:80%;
     text-align: center;
+    margin:0 auto;
 }
 .our-team .our-team-heading h1{
     padding-top: 50px;
