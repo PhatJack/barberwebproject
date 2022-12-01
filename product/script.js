@@ -168,21 +168,21 @@ function clearPrice() {
 }
 function searchByName() {
   currentPageProduct = 1;
-  clearPrice();
-  createList("ALL");
-  document.querySelector(".filter .category").value = "ALL";
+    clearPrice();
+    createList("ALL");
+      document.querySelector(".filter .category").value = "ALL";
 
   var name = document.querySelector(".search input").value;
-  console.log(name);
+    console.log(name);
   var tempProductData = [];
-  console.log(currentProductData);
-  for (var i = 0; i < currentProductData.length; i++) {
-    if (currentProductData[i].name.search(name.toUpperCase()) != -1)
-      tempProductData.push(currentProductData[i]);
-  }
-  console.log(tempProductData);
-  if (tempProductData.length != 0) currentProductData = tempProductData;
-  console.log(currentProductData);
+    console.log(currentProductData);
+      for (var i = 0; i < currentProductData.length; i++) {
+        if (currentProductData[i].name.search(name.toUpperCase()) != -1)
+          tempProductData.push(currentProductData[i]);
+      }
+    console.log(tempProductData);
+        if (tempProductData.length != 0) currentProductData = tempProductData;
+    console.log(currentProductData);
 
   showCurrentProduct();
   showCurrentDot();
@@ -201,11 +201,10 @@ function numberWithCommas(x) {
 }
 function loadPageProductInfo() {
   var product = JSON.parse(localStorage.getItem("currentProduct"));
-  console.log(product);
-  document.querySelector(".product-content-left-img img").src = product.url;
-  document.querySelector(".product-name h2").innerHTML = product.name;
-  document.querySelector(".product-price p").innerHTML =
-    numberWithCommas(product.price) + " VND";
+    console.log(product);
+      document.querySelector(".product-content-left-img img").src = product.url;
+      document.querySelector(".product-name h2").innerHTML = product.name;
+      document.querySelector(".product-price p").innerHTML = numberWithCommas(product.price) + " VND";
 }
 //mouse-move
 $(function () {

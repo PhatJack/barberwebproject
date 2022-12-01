@@ -1,10 +1,10 @@
-let ourteam = document.querySelector(".our-team-content");
-const api_url = "../ApiJson/data.json";
+let ourteam = document.querySelector(".our-team .our-team-content");
+const api_url = "./ApiJson/data.json";
 //
 async function getData() {
     const response = await fetch(api_url);
     const data = await response.json();
-    for(let i = 0;i< data.length;i++) {
+    for(let i = 0;i < data.length;i++) {
         ourteam.innerHTML += `
         <div class="member">
             <div class="member-photo">
