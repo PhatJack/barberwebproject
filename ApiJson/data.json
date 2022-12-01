@@ -1,24 +1,24 @@
 [
     {
-        "img":".home/img/portrait/portrait1.jpg",
+        "img":"../home/img/portrait/portrait1.jpg",
         "name": "Jack Phat",
         "career": "Home Page and fix bug",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     },
     {
-        "img":"./img/portrait/portrait2.jpg",
+        "img":"../home/img/portrait/portrait2.jpg",
         "name": "Ngoc Thuc",
         "career": "Product",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     },
     {
-        "img":"./img/portrait/portrait3.jpg",
+        "img":"../home/img/portrait/portrait3.jpg",
         "name": "Bui Bao",
         "career": "Album",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."
     },
     {
-        "img":"./img/portrait/portrait4.jpg",
+        "img":"../home/img/portrait/portrait4.jpg",
         "name": "Minh Thuan va Nhat Huy",
         "career": "Course and Booking",
         "desc": "Sunt consectetur eiusmod Lorem in aute veniam incididunt elit non laboris quis sint. Amet est euelit irure nisi magna cillum sint laborum consectetur. Amet reprehenderit proident cupidatat officia. Consequat commodo pariatur dolore dolore nulla ut reprehenderit excepteur sit dolor consequat amet excepteur magna."

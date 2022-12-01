@@ -10,7 +10,7 @@ ul li {
 }
 
 .parallax {
-    background-image: url('../img/img1.jpg');
+    background-image: url('../img/news.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,6 @@ ul li {
     color: white;
     padding: 120px 0;
     text-align: center;
-    /* background: linear-gradient(to bottom, #727272,#787878); */
 }
 
 .parallax h1 {

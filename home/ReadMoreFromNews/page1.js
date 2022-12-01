@@ -1,5 +1,5 @@
 let list = document.querySelector(".news-container .col-left .list-news");
-const api_link = "../ApiJson/news.json";
+const api_link = "../../ApiJson/news.json";
 let nextBtn = document.querySelector("#nextBtn");
 let prevBtn = document.querySelector("#prevBtn");
 let perPage = 5;
