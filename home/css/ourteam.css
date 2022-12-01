@@ -5,7 +5,9 @@
     padding: 0 10%;
 }
 .our-team .our-team-heading{
+    width:80%;
     text-align: center;
+    margin:0 auto;
 }
 .our-team .our-team-heading h1{
     padding-top: 50px;
@@ -100,7 +102,7 @@
 }
 
 .member-information .memeber-career {
-    font-size: 12px;
+    font-size: 18px;
     color: #bc865f;
     line-height: calc(19/15);
     margin-top: 10px;

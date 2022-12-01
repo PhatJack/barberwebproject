@@ -16,7 +16,7 @@ body{
 }
 .about-us-img{
     width: 100%;
-    background-image: url("./hello.jpg");
+    background-image: url("../img/aboutus.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;

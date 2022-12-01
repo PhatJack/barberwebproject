@@ -9,6 +9,7 @@
     <title>List-product</title>
     <link rel="stylesheet" href="../css/category.css">
     <link rel="stylesheet" href="../../navbar_footer/css/navbar.css">
+    <link rel="stylesheet" href="../../navbar_footer/css/cart.css">
 
 </head>
 
@@ -16,27 +17,70 @@
     <header class="nav container" id="nav">
         <div class="nav-container">
             <div class="nav-logo">
+<<<<<<< HEAD
                 <a href="../../index.html"><img src="../../img/logo2.png" alt="5Logo"></a>
+=======
+                <a href="../../index.html"><img src="../logo2.png" alt="5Logo"></a>
+>>>>>>> 17496b071a5e63fcfbf94ca40ba3283471ae6224
             </div>
             <div class="navbar">
                 <ul class="list">
-                    <li><a href="#news" class="text_change">Lifestyle</a></li>
-                    <li><a href="#product">Sản phẩm</a>
-                        <ul>
-                            <li class="temp">Wax</li>
-                            <li class="temp">Clothes</li>
-                            <li class="temp">Pomade</li>
-                            <li class="temp">The Mavericks</li>
-                        </ul>
-                    </li>
-                    <li><a href="./course/index.html" target="_blank">Học Barber</a></li>
-                    <li><a href="#">Đặt lịch</a></li>
+                    <li><a href="../../ablum/album.html" class="text_change">Album</a></li>
+                    <li><a href="#product">Sản phẩm</a></li>
+                    <li><a href="../../course/html/course.html">Học Barber</a></li>
+                    <li><a href="../../booking/booking.html">Đặt lịch</a></li>
                 </ul>
                 <ul class="social-icon">
                     <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                     <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                    <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                    <li><a href="#"><i class="bi bi-cart" id="cartIcon"></i></a></li>
+                    <div class="cart">
+                        <div class="cart-title">
+                            <h1>Your Cart</h1>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 45.05$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                            </div>
+                            <!-- Remove the product in Cart -->
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 100$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                                <!-- Remove the product in Cart -->
+                            </div>
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-content">
+                            <img src="./img/tintuc.png" alt="" class="img-cart">
+                            <div class="cart-detail-box">
+                                <div class="cart-product-title">Pomade</div>
+                                <div class="cart-price"> 55$</div>
+                                <input type="number" value="1" class="cart-quantity" min="0">
+                                <!-- Remove the product in Cart -->
+                            </div>
+                            <i class="bi bi-trash" id="cart-remove"></i>
+                        </div>
+                        <div class="cart-total">
+                            <div class="cart-total-title">Total</div>
+                            <div class="cart-total-price">0$</div>
+                        </div>
+                        <!-- Buy button -->
+                        <button type="button" class="btn-buy" value="Buy now">Buy Now</button>
+                        <!-- icon close -->
+                        <i class="bi bi-x" id="close-btn"></i>
+                    </div>
+                    <div class="over-lay"></div>
+                    <!-- Link CART to js -->
+                    <script src="./js/cart.js"></script>
                 </ul>
             </div>
             <div class="hero">
@@ -68,11 +112,18 @@
                             </select> <br>
                         </label>
                         <label>Giá:
+<<<<<<< HEAD
                             <input type="text" class="filter price min" placeholder="&#8363; từ">
                             <span> &#8211; </span>
                             <input type="text" class="filter price max" onchange="filterByPrice()"
                                 placeholder=" &#8363; đến">
                         </label>
+=======
+                            <input type="text" class="filter price min" placeholder="&#8363; TỪ">
+                            <span>-</span>
+                            <input type="text" class="filter price max" onchange="filterByPrice()"
+                                placeholder=" &#8363; ĐẾN"></label>
+>>>>>>> 17496b071a5e63fcfbf94ca40ba3283471ae6224
                     </form>
                 </div>
                 <div class="search">
@@ -97,7 +148,8 @@
 </body>
 <script src="../script.js"></script>
 <script src="../product.js"></script>
-<script src="../shopProduct.js"></script>
+<script src="../../navbar_footer/js/shopProduct.js"></script>
+<script src="../../navbar_footer/js/cart.js"></script>
 <script src="../../navbar_footer/js/navbar.js"></script>
 <script src="../../navbar_footer/js/menuscroll.js"></script>
 

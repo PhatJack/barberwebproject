@@ -168,21 +168,21 @@ function clearPrice() {
 }
 function searchByName() {
   currentPageProduct = 1;
-    clearPrice();
-    createList("ALL");
-      document.querySelector(".filter .category").value = "ALL";
+  clearPrice();
+  createList("ALL");
+  document.querySelector(".filter .category").value = "ALL";
 
   var name = document.querySelector(".search input").value;
-    console.log(name);
+  console.log(name);
   var tempProductData = [];
-    console.log(currentProductData);
-      for (var i = 0; i < currentProductData.length; i++) {
-        if (currentProductData[i].name.search(name.toUpperCase()) != -1)
-          tempProductData.push(currentProductData[i]);
-      }
-    console.log(tempProductData);
-        if (tempProductData.length != 0) currentProductData = tempProductData;
-    console.log(currentProductData);
+  console.log(currentProductData);
+  for (var i = 0; i < currentProductData.length; i++) {
+    if (currentProductData[i].name.search(name.toUpperCase()) != -1)
+      tempProductData.push(currentProductData[i]);
+  }
+  console.log(tempProductData);
+  if (tempProductData.length != 0) currentProductData = tempProductData;
+  console.log(currentProductData);
 
   showCurrentProduct();
   showCurrentDot();
@@ -201,35 +201,40 @@ function numberWithCommas(x) {
 }
 function loadPageProductInfo() {
   var product = JSON.parse(localStorage.getItem("currentProduct"));
-    console.log(product);
-      document.querySelector(".product-content-left-img img").src = product.url;
-      document.querySelector(".product-name h2").innerHTML = product.name;
-      document.querySelector(".product-price p").innerHTML = numberWithCommas(product.price) + " VND";
+  console.log(product);
+  document.querySelector(".product-content-left-img img").src = product.url;
+  document.querySelector(".product-name h2").innerHTML = product.name;
+  document.querySelector(".product-price p").innerHTML =
+    numberWithCommas(product.price) + " VND";
 }
 //mouse-move
-let item = document.querySelector(".product-content-left-img");
-function scaleImg(index){
-    index.onmouseover = (event) => {
-        let temp = event.target;
-        temp.style.transform = "scale(2)";
-    };
-    index.onmouseout = (event) => {
-        let temp = event.target;
-        temp.style.transform = "scale(1)";
-    };
-    index.addEventListener("mousemove", (event) =>  {
-        let temp = event.target;
-            var x = event.clientX;
-            var y = event.clientY;
-            var xPoint = ((x - item.offsetLeft) / item.clientWidth) * 100;
-            var yPoint = ((y - item.offsetTop) / item.clientHeight) * 100;
-            // item.style.transform = "rotate(90deg)";
-            temp.style.transformOrigin = xPoint + "% " + yPoint + "%";
-            console.log(xPoint, yPoint);
-        });
-    
-}
+$(function () {
+  var zoom = function (elm) {
+    elm
+      .on("mouseover", function () {
+        $(this).children(".img").css({ transform: "scale(2)" });
+      })
+      .on("mouseout", function () {
+        $(this).children(".img").css({ transform: "scale(1)" });
+      })
+      .on("mousemove", function (e) {
+        $(this)
+          .children(".img")
+          .css({
+            "transform-origin":
+              ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
+              "% " +
+              ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+              "%",
+          });
+      });
+  };
 
-scaleImg(item);
-
-
+  $(".item").each(function () {
+    $(this)
+      .append('<div class="img"></div>')
+      .children(".img")
+      .css({ "background-image": "url(" + $(this).data("image") + ")" });
+    zoom($(this));
+  });
+});
