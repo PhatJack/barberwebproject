@@ -108,8 +108,9 @@ label {
   border-left: 1px solid rgb(128, 128, 128, 0.5);
 }
 
-.product-description span:nth-child(1) {
+.product-description span:nth-child(2) {
   font-weight: bold;
+  width: 250px;
   text-transform: uppercase;
 }
 

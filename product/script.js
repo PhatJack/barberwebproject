@@ -244,18 +244,48 @@ function loadPageFormCheckout() {
             <div class="product-thumbnail-wrapper">
               <img style="width: 150px;" class="product-thumbnail-image" alt=""
                 src="${current_cart[i].product.url}">
-              <span class="product-thumbnail-quantity" aria-hidden="true">${current_cart[i].count}</span>
+              <span class="product-thumbnail-quantity" aria-hidden="true">${
+                current_cart[i].count
+              }</span>
             </div>
           </div>
         </div>
         <div class="product-description">
-          <span class="product-description-name order-summary-emphasis">${current_cart[i].product.name}</span>
+          <span class="price-per-product">${
+            parseInt(current_cart[i].product.price).toLocaleString("en-US") +
+            " VND/1 sản phẩm."
+          }</span>
+          <span class="product-description-name order-summary-emphasis">${
+            current_cart[i].product.name
+          }</span>
           <span class="product-size" style="color: #969696">113 gram</span>
         </div>
         <div class="product-price">
-          <span class="order-summary-emphasis" style="text-align: right;">${current_cart[i].product.price}</span>
+          <span class="order-summary-emphasis" style="text-align: right;">${
+            (
+              parseInt(current_cart[i].product.price) *
+              parseInt(current_cart[i].count)
+            ).toLocaleString("en-US") + " VND"
+          }</span>
         </div>
       </div>
     </div>`;
   }
+  calTotal();
+}
+function calTotal() {
+  let current_cart = JSON.parse(localStorage.getItem("cart"));
+  let total_container = document.querySelector(
+    ".total-line-subtotal .total-line-price span"
+  );
+  let total_all_container = document.querySelector(".payment-due-price");
+  console.log(total_container);
+  let total = 0;
+  for (let i = 0; i < current_cart.length; i++) {
+    total +=
+      parseInt(current_cart[i].product.price) * parseInt(current_cart[i].count);
+  }
+  total_container.innerHTML = total.toLocaleString("en-US") + " ₫";
+  total_all_container.innerHTML =
+    (total + 100000).toLocaleString("en-US") + " ₫";
 }
