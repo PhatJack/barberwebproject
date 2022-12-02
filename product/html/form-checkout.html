@@ -35,9 +35,10 @@
         btn.classList.remove("field-input-btn-enable")
     }
   </script>
+  <script src="../script.js"></script>
 </head>
 
-<body>
+<body onload="loadPageFormCheckout()">
   <div class="container">
     <h1>customer information</h1>
     <form action="" method="">
@@ -76,25 +77,7 @@
   <div class="sidebar">
     <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- product-list -->
-    <div class="product-table">
-      <div class="product">
-        <div class="product-image">
-          <div class="product-thumbnail">
-            <div class="product-thumbnail-wrapper">
-              <img style="width: 150px;" class="product-thumbnail-image" alt=""
-                src="https://cdn.shopify.com/s/files/1/0693/3793/products/Prospectors_Pomade_Gold_Rush_1.5oz_Open_850x.jpg?v=1566841847">
-              <span class="product-thumbnail-quantity" aria-hidden="true">1</span>
-            </div>
-          </div>
-        </div>
-        <div class="product-description">
-          <span class="product-description-name order-summary-emphasis">Prospectors Gold Rush POMADE</span>
-          <span class="product-size" style="color: #969696">113 gram</span>
-        </div>
-        <div class="product-price">
-          <span class="order-summary-emphasis" style="text-align: right;">380,000₫</span>
-        </div>
-      </div>
+    <div class="product-list">
     </div>
 
     <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
