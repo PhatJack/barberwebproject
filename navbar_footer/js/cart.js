@@ -7,20 +7,27 @@ let removeCart = document.querySelector("#cart-remove");
 let overlay = document.querySelector(".over-lay");
 //Close button
 function addToCart() {
+  let c = document.querySelector(".product-quantity input").value;
   let currentProduct = JSON.parse(localStorage.getItem("currentProduct"));
   console.log(currentProduct);
   let currentCart = JSON.parse(localStorage.getItem("cart"));
   console.log(currentCart);
   if (currentCart != null) {
-    currentCart.push({ product: currentProduct, count: 1 });
-  } else currentCart = [{ product: currentProduct, count: 1 }];
+    for (let i = 0; i < currentCart.length; i++)
+      if (currentCart[i].product.name == currentProduct.name) {
+        console.log("yes");
+        currentCart[i].count = parseInt(currentCart[i].count) + parseInt(c);
+        localStorage.setItem("cart", JSON.stringify(currentCart));
+        return;
+      }
+    currentCart.push({ product: currentProduct, count: c });
+  } else currentCart = [{ product: currentProduct, count: c }];
   localStorage.setItem("cart", JSON.stringify(currentCart));
 }
 function loadCart() {
   let currentCart = JSON.parse(localStorage.getItem("cart"));
   let cart_container = document.querySelector(".cart-content-container");
   cart_container.innerHTML = ``;
-  console.log(currentCart[0].product.url);
   for (let i = 0; i < currentCart.length; i++) {
     cart_container.innerHTML += `
     <div class="cart-content">
