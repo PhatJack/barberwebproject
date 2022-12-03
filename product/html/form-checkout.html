@@ -27,17 +27,18 @@
       }
     }
     function enableBtn() {
-          var btn = document.querySelector(".field-input-btn")
-          var input = document.querySelector(".field-input")
-          if (input.value != "")
-            btn.classList.add("field-input-btn-enable")
-          else
-            btn.classList.remove("field-input-btn-enable")
-        }
+      var btn = document.querySelector(".field-input-btn")
+      var input = document.querySelector(".field-input")
+      if (input.value != "")
+        btn.classList.add("field-input-btn-enable")
+      else
+        btn.classList.remove("field-input-btn-enable")
+    }
   </script>
+  <script src="../script.js"></script>
 </head>
 
-<body>
+<body onload="loadPageFormCheckout()">
   <div class="container">
     <h1>customer information</h1>
     <form action="" method="">
@@ -76,25 +77,7 @@
   <div class="sidebar">
     <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- product-list -->
-    <div class="product-table">
-      <div class="product">
-        <div class="product-image">
-          <div class="product-thumbnail">
-            <div class="product-thumbnail-wrapper">
-              <img style="width: 150px;" class="product-thumbnail-image" alt=""
-                src="https://cdn.shopify.com/s/files/1/0693/3793/products/Prospectors_Pomade_Gold_Rush_1.5oz_Open_850x.jpg?v=1566841847">
-              <span class="product-thumbnail-quantity" aria-hidden="true">1</span>
-            </div>
-          </div>
-        </div>
-        <div class="product-description">
-          <span class="product-description-name order-summary-emphasis">Prospectors Gold Rush POMADE</span>
-          <span class="product-size" style="color: #969696">113 gram</span>
-        </div>
-        <div class="product-price">
-          <span class="order-summary-emphasis" style="text-align: right;">380,000₫</span>
-        </div>
-      </div>
+    <div class="product-list">
     </div>
 
     <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -122,15 +105,13 @@
           <tr class="total-line total-line-subtotal">
             <td class="total-line-name">Tạm tính</td>
             <td class="total-line-price">
-              <span class="order-summary-emphasis" data-checkout-subtotal-price-target="38000000">
-                380,000₫
-              </span>
+              <span class="order-summary-emphasis"></span>
             </td>
           </tr>
           <tr class="total-line total-line-shipping">
             <td class="total-line-name">Phí vận chuyển</td>
             <td class="total-line-price">
-              <span class="order-summary-emphasis" data-checkout-total-shipping-target="0">--</span>
+              <span class="order-summary-emphasis">100,000 ₫</span>
             </td>
           </tr>
         </tbody>
@@ -141,9 +122,7 @@
             </td>
             <td class="total-line-name payment-due">
               <span class="payment-due-currency">VND</span>
-              <span class="payment-due-price" data-checkout-payment-due-target="38000000">
-                380,000₫
-              </span>
+              <span class="payment-due-price"></span>
               <span class="checkout_version" display:none="" data_checkout_version="0">
               </span>
             </td>

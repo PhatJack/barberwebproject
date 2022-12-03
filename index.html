@@ -90,13 +90,13 @@
                             <div class="cart-total-price">0$</div>
                         </div>
                         <!-- Buy button -->
-                        <button type="button" class="btn-buy" value="Buy now">Buy Now</button>
+                        <button type="button" class="btn-buy" value="Buy now" onclick="goToFormCheckout('home')">Buy
+                            Now</button>
                         <!-- icon close -->
                         <i class="bi bi-x" id="close-btn"></i>
                     </div>
                     <div class="over-lay"></div>
                     <!-- Link CART to js -->
-                    <script src="./home/js/cart.js"></script>
                 </ul>
             </div>
             <div class="hero">
@@ -129,13 +129,8 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
+            <!-- The dots/circles -->
         </div>
-        <!-- Next and previous buttons -->
-        <div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <!-- The dots/circles -->
     </div>
     <div class="news-container container" id="news">
         <div class="news-wrapper">
@@ -147,7 +142,8 @@
                     <a href="./home/ReadMoreFromNews/ke-dao-mo.html"><img src="./home/ReadMoreFromNews/imgfornew/1.jpeg"
                             alt="" class="reveal fade-bottom" style="animation-duration: 1s;"></a>
                     <a href="./home/ReadMoreFromNews/ke-dao-mo.html">
-                        <p class="news-description reveal fade-bottom">KẺ ĐÀO MỎ PROSPECTORS QUYỀN LỰC TRONG CÁC HÃNG
+                        <p class="news-description reveal fade-bottom">KẺ ĐÀO MỎ PROSPECTORS QUYỀN LỰC TRONG CÁC
+                            HÃNG
                             POMADE!!!</p>
                     </a>
                 </div>
@@ -155,7 +151,8 @@
                     <a href="./home/ReadMoreFromNews/baseball.html"><img src="./home/ReadMoreFromNews/imgfornew/2.jpg"
                             alt="" class="reveal fade-bottom" style="animation-duration: 1.2s;"></a>
                     <a href="./home/ReadMoreFromNews/baseball.html">
-                        <p class="news-description reveal fade-bottom" style="animation-duration: 1.3s;">Luật bóng chày
+                        <p class="news-description reveal fade-bottom" style="animation-duration: 1.3s;">Luật bóng
+                            chày
                             dễ
                             hiểu nhất và hình thức </p>
                     </a>
@@ -173,7 +170,8 @@
                     <a href="./home/ReadMoreFromNews/barbercon.html"><img src="./home/ReadMoreFromNews/imgfornew/4.jpg"
                             alt="" class="reveal fade-bottom" style="animation-duration: 1.6s;"></a>
                     <a href="./home/ReadMoreFromNews/barbercon.html">
-                        <p class="news-description reveal fade-bottom" style="animation-duration: 1.7s;">BARBERCON:Ngày
+                        <p class="news-description reveal fade-bottom" style="animation-duration: 1.7s;">
+                            BARBERCON:Ngày
                             lễ
                             lớn nhất quy tụ các barber thế giới</p>
                     </a>
@@ -182,7 +180,8 @@
                     <a href="./home/ReadMoreFromNews/racingboy.html"><img src="./home/ReadMoreFromNews/imgfornew/5.png"
                             alt="" class="reveal fade-bottom" style="animation-duration: 1.8s;"></a>
                     <a href="./home/ReadMoreFromNews/racingboy.html">
-                        <p class="news-description reveal fade-bottom" style="animation-duration: 1.9s;">Phong cách Dân
+                        <p class="news-description reveal fade-bottom" style="animation-duration: 1.9s;">Phong cách
+                            Dân
                             Tổ
                             đến từ Nhật Bổn</p>
                     </a>
@@ -191,7 +190,8 @@
                     <a href="./home/ReadMoreFromNews/seoul.html"><img src="./home/ReadMoreFromNews/imgfornew/6.png"
                             alt="" class="reveal fade-bottom" style="animation-duration: 2s;"></a>
                     <a href="./home/ReadMoreFromNews/seoul.html">
-                        <p class="news-description reveal fade-bottom" style="animation-duration: 2.1s;">Seoul có 4RAU
+                        <p class="news-description reveal fade-bottom" style="animation-duration: 2.1s;">Seoul có
+                            4RAU
                             Barber Cutclub phiên bản Hàn thứ hai ???</p>
                     </a>
                 </div>
@@ -199,7 +199,8 @@
                     <a href="./home/ReadMoreFromNews/seoul.html"><img src="./home/ReadMoreFromNews/imgfornew/7.jpg"
                             alt="" class="reveal fade-bottom" style="animation-duration: 2.2s;"></a>
                     <a href="./home/ReadMoreFromNews/seoul.html">
-                        <p class="news-description reveal fade-bottom" style="animation-duration: 2.3s;">BỘ SƯU TẬP MỚI
+                        <p class="news-description reveal fade-bottom" style="animation-duration: 2.3s;">BỘ SƯU TẬP
+                            MỚI
                             CỦA
                             SUPREME lạ mắt và cuốn hút</p>
                     </a>
@@ -208,7 +209,8 @@
                     <a href="./home/ReadMoreFromNews/seoul.html"></a><img src="./home/ReadMoreFromNews/imgfornew/8.jpeg"
                         alt="" class="reveal fade-bottom" style="animation-duration: 2.4s;">
                     <a href="./home/ReadMoreFromNews/seoul.html">
-                        <p class="news-description reveal fade-bottom" style="animation-duration: 2.5s;">Có tiền cũng
+                        <p class="news-description reveal fade-bottom" style="animation-duration: 2.5s;">Có tiền
+                            cũng
                             không
                             dám cắt tóc ở các nước này!</p>
                 </div>
@@ -416,10 +418,14 @@
     AOS.init();
 </script> -->
 <script src="./home/js/slideshow.js"></script>
-<script src="./home/js/navbar.js"></script>
 <script src="./home/js/AOS.js"></script>
-<script src="./home/js/menuscroll.js"></script>
 <script src="./home/js/backTotop.js"></script>
+<script src="./navbar_footer/js/cart.js"></script>
+<script src="./navbar_footer/js/menuscroll.js"></script>
+<script src="./navbar_footer/js/navbar.js"></script>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
