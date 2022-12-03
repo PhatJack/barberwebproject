@@ -137,7 +137,16 @@ a:hover {
     color: #9f7150;
     background: black;
 }
-
+.login-form form .input-password{
+    position: relative;
+}
+.login-form form .input-password #eyeIcon {
+    position: absolute;
+    top: 60%;
+    right: 4%;
+    cursor: pointer;
+    display: none;
+}
 .login-form form .text-or::before {
     position: absolute;
     content: '';

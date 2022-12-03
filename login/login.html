@@ -12,7 +12,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./home/img/favicon2.png">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="./login.css">
     <title>Document</title>
 </head>
@@ -22,35 +21,37 @@
         <div class="container">
             <div class="standard-form">
                 <div class="img">
-                    <img src="./card.jpg" alt="">
+                    <img src="./img/card.jpg" alt="">
                 </div>
                 <div class="login-form">
                     <div class="header">Sign in</div>
-                    <form action="#" method="login">
+                    <form action="#" autocomplete="off">
                         <div class="input-form input-username">
                             <label for="username">Username</label>
-                            <input type="text" placeholder="Enter username" />
+                            <input type="text" placeholder="Enter username" id="username" autocomplete="current-password"/>
                         </div>
                         <div class="input-form input-email">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Enter username" />
+                            <input type="email" placeholder="Enter username" id="email" autocomplete="current-password" />
+                            <!-- <p class="warning-text">Please enter username</p> -->
                         </div>
                         <div class="input-form input-password">
                             <label for="password">Password </label>
-                            <input type="password" placeholder="Enter password">
+                            <input type="password" placeholder="Enter password" id="pwd" autocomplete="current-password"/>
+                            <i class="fa-solid fa-eye" id="eyeIcon"></i>
                         </div>
                         <div class="input-form input-confirm-password">
                             <!-- <label for="password">Password </label> -->
-                            <input type="password" placeholder="Confirm password">
+                            <input type="password" placeholder="Confirm password" autocomplete="current-password" />
                         </div>
                         <div class="input-form signin">
-                            <button class="signin-btn">Sign in <i class="fa-solid fa-arrow-right"></i></button>
-                            <button class="signin-btn signup-btn">Sign up <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="signin-btn" onclick="login()">Sign in <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="signin-btn signup-btn" onclick="signup()">Sign up <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                         <div class="text-or">OR</div>
                         <div class="continue-form">
                             <div class="google-continue">
-                                <img src="./icons8-google-48.png" alt="">
+                                <img src="./img/icons8-google-48.png" alt="">
                                 <p>Continue with Google</p>
                             </div>
                         </div>
@@ -69,5 +70,5 @@
     </div>
 </body>
 <script src="./login.js"></script>
-
+<script src="./getDataByJson.js"></script>
 </html>

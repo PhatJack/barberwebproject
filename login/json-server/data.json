@@ -1,0 +1,51 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "tienphat",
+      "password": "1234",
+      "email": "jack@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "buibao",
+      "password": "1234",
+      "email": "jack1@gmail.com"
+    },
+    {
+      "id": 3,
+      "username": "ngocthuc",
+      "password": "1234",
+      "email": "jack2@gmail.com"
+    },
+    {
+      "id": 4,
+      "username": "minhthuan",
+      "password": "1234",
+      "email": "jack3@gmail.com"
+    },
+    {
+      "id": 5,
+      "username": "nhathuy",
+      "password": "1234",
+      "email": "jack4@gmail.com"
+    },
+    {
+      "id": 5,
+      "username": "admin",
+      "password": "admin",
+      "email": "jack5@gmail.com"
+    },
+    {
+      "username": "phatnguyen",
+      "password": "hello",
+      "id": 6
+    },
+    {
+      "username": "phatnguyen123",
+      "password": "phat",
+      "email": "jack6@gmail.com",
+      "id": 7
+    }
+  ]
+}
