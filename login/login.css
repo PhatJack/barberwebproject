@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #5e3e27;
+}
+
+ul,
+li {
+    list-style: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #9f7150;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container .standard-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 200px;
+    border-radius: 50px;
+    width: 900px;
+}
+
+.standard-form .img {
+    height: 607px;
+    width: 55%;
+    position: relative;
+}
+.standard-form .img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.login-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.login-form .header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #9f7150;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* position; */
+}
+
+.login-form form .input-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    width: 70%;
+}
+
+.login-form form .input-form label {
+    margin-bottom: 10px;
+}
+
+.login-form form .input-form input {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.login-form form .checkbox-form {
+    margin: 5px 0 10px 0;
+}
+
+.login-form form .signin {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-form form .signin .signin-btn {
+    padding: 10px;
+    background-color: #9f7150;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    /* position: absolute; */
+}
+.login-form form .input-email,
+.login-form form .input-confirm-password{
+    display: none;
+}
+.login-form form .signin .signup-btn{
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%,0);
+    transition: all 0.5s linear;
+}
+.login-form form .signin .signup-btn.active{
+    transform: translate(0,0);
+    /* animation: moveLeft 0.5s linear forwards; */
+    /* animation-iteration-count: 1; */
+}
+.login-form form .signin .signin-btn:hover {
+    color: #9f7150;
+    background: black;
+}
+
+.login-form form .text-or::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 130px;
+    background-color: #cab6a7;
+    top: 50%;
+    left: 106%;
+}
+
+.login-form form .text-or {
+    margin: 20px 0;
+    position: relative;
+
+}
+
+.login-form form .text-or::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 130px;
+    background-color: #cab6a7;
+    top: 50%;
+    right: 106%;
+}
+
+.login-form form .continue-form .google-continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9f7150;
+    padding: 10px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form form .continue-form .google-continue img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.login-form form .continue-form .google-continue p {
+    font-weight: 500;
+}
+
+.login-form form .bottom-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 73%;
+}
+
+.login-form form .bottom-form .forgot-form {
+    text-decoration: none;
+}

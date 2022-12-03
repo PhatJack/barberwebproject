@@ -54,14 +54,12 @@
 }
 
 .navbar ul li a,
-.navbar .list li ul li {
-    /* font-size: 20px; */
+.navbar .social-icon li ul li {
     color: #eee;
     font-weight: 700;
     text-transform: uppercase;
     transition: all 0.25s ease-in;
 }
-
 .navbar .social-icon i {
     font-size: 24px;
 }
@@ -78,14 +76,9 @@
 
 .navbar li:hover a {
     color: #9f7150 !important;
-    /* background-color: white; */
 }
 
-/* .navbar li a:hover {
-    color: #9f7150 !important;
-} */
-
-.navbar .list li ul {
+.navbar .social-icon li ul {
     position: absolute;
     top: 100%;
     left: 28px;
@@ -95,7 +88,7 @@
     display: none;
     visibility: hidden;
 }
-.navbar .list li ul li {
+.navbar .social-icon li ul li {
     width: 100%;
     /* white-space: nowrap; */
     /* padding: 20px 5px 20px 30px; */
@@ -112,7 +105,7 @@
     visibility: visible;
 }
 
-.navbar .list ul li {
+.navbar .social-icon ul li {
     width: calc(100% - 60px);
     text-align: left;
     display: block;
