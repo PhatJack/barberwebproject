@@ -51,8 +51,3 @@ for (let i = 0; i < 5; i++) {
             </div>
         </div>`;
 }
-// let temp = document.getElementsByClassName(".sale-content");
-// console.log(temp.length);
-// for(let i  = 1;i < 5;i = i + 2){
-//   saleContent[i].style.display = 'none';
-// }

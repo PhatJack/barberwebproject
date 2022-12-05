@@ -1,5 +1,5 @@
-let api = "http://localhost:3000/user";
-
+let api = "./json-server/data.json";
+let userHomepage = document.getElementById("link-login");
 function login(){
     getData(handleLogin);
 }
@@ -14,12 +14,21 @@ function handleLogin(data){
     data.forEach(element => {
         if(username == element.username && password == element.password){
             alert('Dang nhap thanh cong');
+            // userHomepage.innerHTML = `
+            //     <li><a href="./login/login.html" target="_blank" id="link-login">Xem </a></li>
+            //     <li><a href="./login/login.html" target="_blank" id="link-login">Dang xuat</a></li>
+            // `;
             window.location.href = "../index.html";
-            localStorage.setItem("username", element.username);
-            localStorage.setItem("password", element.password);
-            localStorage.setItem("email", element.email);
+            let object = {
+                username: element.username,
+                password: element.password,
+            }
+            const key = JSON.stringify(object);
+            localStorage.setItem("currentAccount",key);
+            return true;
         }
     });
+    return false;
     // localStorage.removeItem("username");
     // localStorage.removeItem("password");
 }
@@ -39,6 +48,8 @@ function createUser(data){
     })
     if(data){
         alert('Dang ki thanh cong');
+    }else{
+        alert('Dang ki that bai');
     }
 }
 function handleCreateForm(){
@@ -48,7 +59,13 @@ function handleCreateForm(){
     let user = {
         username: username.value,
         password: password.value,
-        email: email.value,
     };
     createUser(user)
 }
+// function newHomePage(){
+//     userHomepage.innerHTML = `
+//         <li><a href="./login/login.html" target="_blank" id="link-login">Xem </a></li>
+//         <li><a href="./login/login.html" target="_blank" id="link-login">Dang xuat</a></li>
+//     `;
+// }
+// export {login,handleLogin};

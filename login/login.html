@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="./home/img/favicon2.png">
+    <link rel="icon" type="image/x-icon" href="../home/img/favicon2.png">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./login.css">
-    <title>Document</title>
+    <script type="module" src="./data.js"></script>
+    <title>Login</title>
 </head>
 
 <body>
@@ -21,32 +22,42 @@
         <div class="container">
             <div class="standard-form">
                 <div class="img">
-                    <img src="./img/card.jpg" alt="">
+                    <img src="./img/barber.jpg" alt="" class="img-card" />
+                    <div class="float-content">
+                        <div class="float-img">
+                            <img src="./img/logo2.png" alt="" class="logo">
+                            <p>We are the best</p>
+                            <p>Here we have everything service</p>
+                            <p>Come and join with us</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="login-form">
                     <div class="header">Sign in</div>
-                    <form action="#" autocomplete="off">
+                    <form action="#" autocomplete="off" id="form" name="login-form">
                         <div class="input-form input-username">
                             <label for="username">Username</label>
-                            <input type="text" placeholder="Enter username" id="username" autocomplete="current-password"/>
+                            <input type="text" placeholder="Enter username" id="username" required />
                         </div>
                         <div class="input-form input-email">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Enter username" id="email" autocomplete="current-password" />
-                            <!-- <p class="warning-text">Please enter username</p> -->
+                            <input type="email" placeholder="Enter username" id="email" required />
                         </div>
                         <div class="input-form input-password">
                             <label for="password">Password </label>
-                            <input type="password" placeholder="Enter password" id="pwd" autocomplete="current-password"/>
+                            <input type="password" placeholder="Enter password" id="pwd" required />
                             <i class="fa-solid fa-eye" id="eyeIcon"></i>
                         </div>
-                        <div class="input-form input-confirm-password">
+                        <div class="input-form input-confirm-password input-password">
                             <!-- <label for="password">Password </label> -->
-                            <input type="password" placeholder="Confirm password" autocomplete="current-password" />
+                            <input type="password" placeholder="Confirm password" required />
+                            <!-- <i class="fa-solid fa-eye" id="eyeIcon"></i> -->
                         </div>
                         <div class="input-form signin">
-                            <button class="signin-btn" onclick="login()">Sign in <i class="fa-solid fa-arrow-right"></i></button>
-                            <button class="signin-btn signup-btn" onclick="signup()">Sign up <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="signin-btn" type="button" onclick="login()">Sign in <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                            <button class="signin-btn signup-btn" type="submit">Sign up <i
+                                    class="fa-solid fa-arrow-right"></i></button>
                         </div>
                         <div class="text-or">OR</div>
                         <div class="continue-form">
@@ -69,6 +80,7 @@
         </div>
     </div>
 </body>
-<script src="./login.js"></script>
+<script type="text/javascript" src="./login.js"></script>
 <script src="./getDataByJson.js"></script>
+
 </html>
