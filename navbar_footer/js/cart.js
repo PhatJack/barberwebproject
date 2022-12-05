@@ -6,23 +6,31 @@ let closebtn = document.getElementById("close-btn");
 let removeCart = document.querySelector("#cart-remove");
 let overlay = document.querySelector(".over-lay");
 //Close button
-function addToCart() {
+async function addToCart() {
   let c = document.querySelector(".product-quantity input").value;
   let currentProduct = JSON.parse(localStorage.getItem("currentProduct"));
-  console.log(currentProduct);
   let currentCart = JSON.parse(localStorage.getItem("cart"));
-  console.log(currentCart);
+  let modal_success = document.querySelector(".successful-container");
   if (currentCart != null) {
     for (let i = 0; i < currentCart.length; i++)
       if (currentCart[i].product.name == currentProduct.name) {
-        console.log("yes");
         currentCart[i].count = parseInt(currentCart[i].count) + parseInt(c);
         localStorage.setItem("cart", JSON.stringify(currentCart));
+        modal_success.style.display = "flex";
+        await sleep(1000);
+        modal_success.style.display = "none";
         return;
       }
     currentCart.push({ product: currentProduct, count: c });
   } else currentCart = [{ product: currentProduct, count: c }];
   localStorage.setItem("cart", JSON.stringify(currentCart));
+  modal_success.style.display = "flex";
+  await sleep(1000);
+  modal_success.style.display = "none";
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 function removeProduct(index) {
   let currentCart = JSON.parse(localStorage.getItem("cart"));
@@ -34,18 +42,36 @@ function loadCart() {
   let currentCart = JSON.parse(localStorage.getItem("cart"));
   let cart_container = document.querySelector(".cart-content-container");
   cart_container.innerHTML = ``;
+  let total = 0;
   for (let i = 0; i < currentCart.length; i++) {
+    total +=
+      parseInt(currentCart[i].product.price) * parseInt(currentCart[i].count);
     cart_container.innerHTML += `
     <div class="cart-content">
       <img src="${currentCart[i].product.url}" alt="" class="img-cart">
         <div class="cart-detail-box">
         <div class="cart-product-title">${currentCart[i].product.name}</div>
-        <div class="cart-price">${currentCart[i].product.price}</div>
-        <input type="number" value="${currentCart[i].count}" class="cart-quantity" min="0">
+        <div class="cart-price">${
+          parseInt(currentCart[i].product.price).toLocaleString("en-US") +
+          " VND"
+        }</div>
+        <input type="number" value="${
+          currentCart[i].count
+        }" class="cart-quantity" min="1" onchange="changeCount(${i}, this.value)">
       </div>
       <i class="bi bi-trash" id="cart-remove" onclick="removeProduct(${i})"></i>
     </div>`;
   }
+  document.querySelector(".cart-total-price").innerHTML =
+    total.toLocaleString("en-US") + " VND";
+}
+function changeCount(i, newCount) {
+  console.log(newCount);
+  let currentCart = JSON.parse(localStorage.getItem("cart"));
+  console.log(currentCart);
+  currentCart[i].count = newCount;
+  localStorage.setItem("cart", JSON.stringify(currentCart));
+  loadCart();
 }
 cartIcon.onclick = () => {
   cart.classList.add("active");
@@ -62,7 +88,6 @@ overlay.onclick = () => {
 };
 
 function goToFormCheckout(from) {
-  console.log(from);
   switch (from) {
     case "home":
       window.location.href = "./product/html/form-checkout.html";
