@@ -42,18 +42,36 @@ function loadCart() {
   let currentCart = JSON.parse(localStorage.getItem("cart"));
   let cart_container = document.querySelector(".cart-content-container");
   cart_container.innerHTML = ``;
+  let total = 0;
   for (let i = 0; i < currentCart.length; i++) {
+    total +=
+      parseInt(currentCart[i].product.price) * parseInt(currentCart[i].count);
     cart_container.innerHTML += `
     <div class="cart-content">
       <img src="${currentCart[i].product.url}" alt="" class="img-cart">
         <div class="cart-detail-box">
         <div class="cart-product-title">${currentCart[i].product.name}</div>
-        <div class="cart-price">${currentCart[i].product.price}</div>
-        <input type="number" value="${currentCart[i].count}" class="cart-quantity" min="0">
+        <div class="cart-price">${
+          parseInt(currentCart[i].product.price).toLocaleString("en-US") +
+          " VND"
+        }</div>
+        <input type="number" value="${
+          currentCart[i].count
+        }" class="cart-quantity" min="1" onchange="changeCount(${i}, this.value)">
       </div>
       <i class="bi bi-trash" id="cart-remove" onclick="removeProduct(${i})"></i>
     </div>`;
   }
+  document.querySelector(".cart-total-price").innerHTML =
+    total.toLocaleString("en-US") + " VND";
+}
+function changeCount(i, newCount) {
+  console.log(newCount);
+  let currentCart = JSON.parse(localStorage.getItem("cart"));
+  console.log(currentCart);
+  currentCart[i].count = newCount;
+  localStorage.setItem("cart", JSON.stringify(currentCart));
+  loadCart();
 }
 cartIcon.onclick = () => {
   cart.classList.add("active");
@@ -70,21 +88,18 @@ overlay.onclick = () => {
 };
 
 function goToFormCheckout(from) {
-  console.log(from);
-  if (from == "home")
-    window.location.href = "./product/html/form-checkout.html";
-  // switch (from) {
-  //   case "home":
-  //     window.location.href = "./product/html/form-checkout.html";
-  //   case "course":
-  //     window.location.href = "../../product/html/form-checkout.html";
-  //   case "album":
-  //     window.location.href = "../product/html/form-checkout.html";
-  //   case "booking":
-  //     window.location.href = "../product/html/form-checkout.html";
-  //   case "product":
-  //     window.location.href = "./form-checkout.html";
-  // }
+  switch (from) {
+    case "home":
+      window.location.href = "./product/html/form-checkout.html";
+    case "course":
+      window.location.href = "../../product/html/form-checkout.html";
+    case "album":
+      window.location.href = "../product/html/form-checkout.html";
+    case "booking":
+      window.location.href = "../product/html/form-checkout.html";
+    case "product":
+      window.location.href = "./form-checkout.html";
+  }
 }
 // //Cart working JS
 // if (document.readyState === "loading") {
