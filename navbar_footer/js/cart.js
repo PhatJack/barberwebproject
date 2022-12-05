@@ -6,23 +6,31 @@ let closebtn = document.getElementById("close-btn");
 let removeCart = document.querySelector("#cart-remove");
 let overlay = document.querySelector(".over-lay");
 //Close button
-function addToCart() {
+async function addToCart() {
   let c = document.querySelector(".product-quantity input").value;
   let currentProduct = JSON.parse(localStorage.getItem("currentProduct"));
-  console.log(currentProduct);
   let currentCart = JSON.parse(localStorage.getItem("cart"));
-  console.log(currentCart);
+  let modal_success = document.querySelector(".successful-container");
   if (currentCart != null) {
     for (let i = 0; i < currentCart.length; i++)
       if (currentCart[i].product.name == currentProduct.name) {
-        console.log("yes");
         currentCart[i].count = parseInt(currentCart[i].count) + parseInt(c);
         localStorage.setItem("cart", JSON.stringify(currentCart));
+        modal_success.style.display = "flex";
+        await sleep(1000);
+        modal_success.style.display = "none";
         return;
       }
     currentCart.push({ product: currentProduct, count: c });
   } else currentCart = [{ product: currentProduct, count: c }];
   localStorage.setItem("cart", JSON.stringify(currentCart));
+  modal_success.style.display = "flex";
+  await sleep(1000);
+  modal_success.style.display = "none";
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 function removeProduct(index) {
   let currentCart = JSON.parse(localStorage.getItem("cart"));
@@ -63,18 +71,20 @@ overlay.onclick = () => {
 
 function goToFormCheckout(from) {
   console.log(from);
-  switch (from) {
-    case "home":
-      window.location.href = "./product/html/form-checkout.html";
-    case "course":
-      window.location.href = "../../product/html/form-checkout.html";
-    case "album":
-      window.location.href = "../product/html/form-checkout.html";
-    case "booking":
-      window.location.href = "../product/html/form-checkout.html";
-    case "product":
-      window.location.href = "./form-checkout.html";
-  }
+  if (from == "home")
+    window.location.href = "./product/html/form-checkout.html";
+  // switch (from) {
+  //   case "home":
+  //     window.location.href = "./product/html/form-checkout.html";
+  //   case "course":
+  //     window.location.href = "../../product/html/form-checkout.html";
+  //   case "album":
+  //     window.location.href = "../product/html/form-checkout.html";
+  //   case "booking":
+  //     window.location.href = "../product/html/form-checkout.html";
+  //   case "product":
+  //     window.location.href = "./form-checkout.html";
+  // }
 }
 // //Cart working JS
 // if (document.readyState === "loading") {
