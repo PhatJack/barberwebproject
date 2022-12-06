@@ -200,6 +200,8 @@ function loadPageProductInfo() {
   document.querySelector(".product-name h2").innerHTML = product.name;
   document.querySelector(".product-price p").innerHTML =
     numberWithCommas(product.price) + " VND";
+  document.querySelector(".product-info-content-details").innerHTML =
+    productDetails[Math.floor(Math.random() * 5)];
 }
 //mouse-move
 let item = document.querySelector(".product-content-left-img");
