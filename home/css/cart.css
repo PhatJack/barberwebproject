@@ -1,7 +1,7 @@
 .cart{
     position: fixed;
     top: 0;
-    right: -25%;
+    right: -30%;
     width: 400px;
     height: 100vh;
     padding: 20px;
@@ -122,6 +122,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.4);
+    /* background-color: red; */
     z-index: 1000;
     display: none;
 }

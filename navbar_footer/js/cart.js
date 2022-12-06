@@ -89,8 +89,8 @@ function changeCount(i, newCount) {
 }
 cartIcon.onclick = () => {
   cart.classList.add("active");
-  loadCart();
   overlay.style.display = "block";
+  loadCart();
 };
 closebtn.onclick = () => {
   cart.classList.remove("active");

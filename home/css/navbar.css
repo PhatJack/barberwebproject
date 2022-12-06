@@ -74,7 +74,7 @@
     font-size: 20px;
 }
 
-.navbar li:hover a {
+.navbar li:hover > a{
     color: #9f7150 !important;
 }
 
