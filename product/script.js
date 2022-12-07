@@ -18,12 +18,6 @@ function change_info(nth) {
   for (var i = 0; i < infos.length; i++) infos[i].style.display = "none";
   infos[nth].style.display = "block";
 }
-function change_price(quantity) {
-  var price_label = document.querySelector(".product-price");
-  var price = quantity.value * 390000;
-  var price_str = price.toLocaleString("en-US");
-  price_label.innerHTML = `<p style="color: red;">${price_str} VND</p>`;
-}
 function choose_size(nth) {
   var sizes = document.querySelectorAll(".size > *");
   for (var i = 0; i < sizes.length; i++) sizes[i].style.border = "none";
@@ -206,6 +200,8 @@ function loadPageProductInfo() {
   document.querySelector(".product-name h2").innerHTML = product.name;
   document.querySelector(".product-price p").innerHTML =
     numberWithCommas(product.price) + " VND";
+  document.querySelector(".product-info-content-details").innerHTML =
+    productDetails[Math.floor(Math.random() * 5)];
 }
 //mouse-move
 let item = document.querySelector(".product-content-left-img");
