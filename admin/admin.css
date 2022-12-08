@@ -120,8 +120,8 @@ body{
     padding: 15px;
     /* font-size: 22px; */
     border-radius: 5px;
-    width: 330px;
-    height: 200px;
+    width: 18vw;
+    height: 22vh;
 }
 .box-content .box > p:nth-child(1){
     font-size: 14px;
