@@ -1,7 +1,7 @@
 [
     {
-        "username":"theanh28",
-        "phone":"0908141453",
+        "username":"tienphat",
+        "phone":"0908141123",
         "address":"12, 3/2, TPHCM",
         "product": [
             {
@@ -13,5 +13,97 @@
                 "count":"4"
             }
         ]
-    }
+    },
+    {
+        "username":"buibao",
+        "phone":"0904321453",
+        "address":"5/1A, Ly Thuong Kiet, TPHCM",
+        "product": [
+            {
+                "id":"10",
+                "count":"3"
+            },
+            {
+                "id":"15",
+                "count":"2"
+            },
+            {
+                "id":"18",
+                "count":"1"
+            }
+        ]
+    },
+    {
+        "username":"ngocthuc",
+        "phone":"0146141453",
+        "address":"12/22/14D, CMT8, TPHCM",
+        "product": [
+            {
+                "id":"9",
+                "count":"2"
+            },
+            {
+                "id":"13",
+                "count":"4"
+            },
+            {
+                "id":"20",
+                "count":"5"
+            },
+            {
+                "id":"13",
+                "count":"1"
+            }
+        ]
+    },
+    {
+        "username":"minhthuan",
+        "phone":"0965281453",
+        "address":"18/5D, Quang Trung, TPHCM",
+        "product": [
+            {
+                "id":"1",
+                "count":"2"
+            },
+            {
+                "id":"3",
+                "count":"4"
+            },
+            {
+                "id":"13",
+                "count":"4"
+            },
+            {
+                "id":"32",
+                "count":"4"
+            }
+        ]
+    },
+    {
+        "username":"nhathuy",
+        "phone":"0901549453",
+        "address":"12/41, Truong Chinh, TPHCM",
+        "product": [
+            {
+                "id":"21",
+                "count":"2"
+            },
+            {
+                "id":"18",
+                "count":"3"
+            },
+            {
+                "id":"1",
+                "count":"2"
+            },
+            {
+                "id":"3",
+                "count":"4"
+            },
+            {
+                "id":"13",
+                "count":"4"
+            }
+        ]
+    },
 ]
