@@ -18,7 +18,11 @@ function handleLogin(data){
             //     <li><a href="./login/login.html" target="_blank" id="link-login">Xem </a></li>
             //     <li><a href="./login/login.html" target="_blank" id="link-login">Dang xuat</a></li>
             // `;
-            window.location.href = "../index.html";
+            if(username == "admin" && password == "admin"){
+                window.location.href = "../admin/admin.html"
+            }else{
+                window.location.href = "../index.html";
+            }
             let object = {
                 username: element.username,
                 password: element.password,

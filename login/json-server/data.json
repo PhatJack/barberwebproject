@@ -15,19 +15,19 @@
       "id": 3,
       "username": "ngocthuc",
       "password": "1234",
-      "email": "jack2@gmail.com"
+      "email": "thuc1123@gmail.com"
     },
     {
       "id": 4,
       "username": "minhthuan",
       "password": "1234",
-      "email": "jack3@gmail.com"
+      "email": "thuan123@gmail.com"
     },
     {
       "id": 5,
       "username": "nhathuy",
       "password": "1234",
-      "email": "jack4@gmail.com"
+      "email": "huy1234@gmail.com"
     },
     {
       "id": 6,
@@ -45,13 +45,13 @@
       "id": 8,
       "username": "phatnguyen123",
       "password": "phat",
-      "email": "jack@gmail.com"
+      "email": "phatnguyen@gmail.com"
     },
     {
       "id": 9,
       "username": "phatnguyen321",
       "password": "phat",
-      "email": "jack@gmail.com"
+      "email": "phatphat@gmail.com"
     },
     {
       "id": 10,

@@ -6,5 +6,69 @@
         "branch": "1",
         "date":"2022-12-08",
         "time":"18:00"
+    },
+    {
+        "name": "Nguyen Cong Phuong",
+        "phone": "0978303029",
+        "numberOfCustomer":"1",
+        "branch": "3",
+        "date":"2022-12-09",
+        "time":"13:00"
+    },
+    {
+        "name": "Nguyen Van Toan",
+        "phone": "0901863578",
+        "numberOfCustomer":"2",
+        "branch": "2",
+        "date":"2022-12-08",
+        "time":"17:00"
+    },
+    {
+        "name": "Tran Minh Duc",
+        "phone": "0362389762",
+        "numberOfCustomer":"1",
+        "branch": "1",
+        "date":"2022-12-09",
+        "time":"18:00"
+    },
+    {
+        "name": "Truong Van Thai Uy",
+        "phone": "0966859476",
+        "numberOfCustomer":"2",
+        "branch": "1",
+        "date":"2022-12-08",
+        "time":"10:00"
+    },
+    {
+        "name": "Le Van Son",
+        "phone": "0987674348",
+        "numberOfCustomer":"1",
+        "branch": "3",
+        "date":"2022-12-08",
+        "time":"9:00"
+    },
+    {
+        "name": "Le Duy Manh",
+        "phone": "0378563120",
+        "numberOfCustomer":"1",
+        "branch": "4",
+        "date":"2022-12-08",
+        "time":"11:00"
+    },
+    {
+        "name": "Nguyen Hoang Duc",
+        "phone": "0966727865",
+        "numberOfCustomer":"1",
+        "branch": "3",
+        "date":"2022-12-09",
+        "time":"11:00"
+    },
+    {
+        "name": "Nguyen Quang Hai",
+        "phone": "0974598923",
+        "numberOfCustomer":"1",
+        "branch": "4",
+        "date":"2022-12-08",
+        "time":"2:00"
     }
 ]
