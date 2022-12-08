@@ -1,5 +1,6 @@
 [
     {
+        "id" : "1",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL ASTRINGENT FOAM",
         "price" : "430.000 VND",
@@ -8,6 +9,7 @@
         "quantity":"100"
     },
     {
+        "id" : "2",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL SHAVE CREAM",
         "price" : "320.000 VND",
@@ -16,6 +18,7 @@
         "quantity":"100"
     },
     {
+        "id" : "3",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL BEARD FOAM",
         "price" : "430.000 VND",
@@ -24,6 +27,7 @@
         "quantity":"58"
     },
     {
+        "id" : "4",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL BEARD WASH",
         "price" : "490.000 VND",
@@ -33,6 +37,7 @@
 
     },
     {
+        "id" : "5",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL SOLID COLOGNE WOOD & SPICE",
         "price" : "350.000 VND",
@@ -41,6 +46,7 @@
         "quantity":"10"
     },
     {
+        "id" : "6",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL BEARD BALM",
         "price" : "430.000 VND",
@@ -49,6 +55,7 @@
         "quantity":"20"
     },
     {
+        "id" : "7",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL BEARD BALM WOOD & SPICE",
         "price" : "350.000 VND",
@@ -57,6 +64,7 @@
         "quantity":"15"
     },
     {
+        "id" : "8",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL ‘THE STACHE’ MOUSTACHE WAX",
         "price" : "350.000 VND",
@@ -65,6 +73,7 @@
         "quantity":"17"
     },
     {
+        "id" : "9",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL BEARD FOAM WOOD & SPICE",
         "price" : "430.000 VND",
@@ -74,6 +83,7 @@
         
     },
     {
+        "id" : "10",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL BEARD SERUM",
         "price" : "650.000 VND",
@@ -83,6 +93,7 @@
 
     },
     {
+        "id" : "11",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL REFRESH NO RINSE BEARD WASH",
         "price" : "460.000 VND",
@@ -92,6 +103,7 @@
 
     },
     {
+        "id" : "12",
         "category" : "BEARD & SHAVE",
         "name" : "REUZEL AFTERSHAVE",
         "price" : "320.000 VND",
@@ -101,6 +113,7 @@
 
     },
     {
+        "id" : "13",
         "category" : "HAIR & BODY",
         "name" : "BODY SOAP BAR",
         "price" : "470.000 VND",
@@ -110,6 +123,7 @@
         
     },
     {
+        "id" : "14",
         "category" : "HAIR & BODY",
         "name" : "REUZEL 3-IN-1 TEA TREE ",
         "price" : "530.000 VND",
@@ -118,6 +132,7 @@
         "quantity":"25"
     },
     {
+        "id" : "15",
         "category" : "HAIR & BODY",
         "name" : "REUZEL DAILY SHAMPOO",
         "price" : "860.000 VND",
@@ -127,6 +142,7 @@
         
     },
     {
+        "id" : "16",
         "category" : "HAIR & BODY",
         "name" : "REUZEL HAIR TONIC",
         "price" : "620.000 VND",
@@ -135,6 +151,7 @@
         "quantity":"15"
     },
     {
+        "id" : "17",
         "category" : "HAIR & BODY",
         "name" : "SPRAY GROOMING TONIC",
         "price" : "560.000 VND",
@@ -144,6 +161,7 @@
         
     },
     {
+        "id" : "18",
         "category" : "HAIR & BODY",
         "name" : "SURF TONIC",
         "price" : "500.000 VND",
@@ -153,6 +171,7 @@
         
     },
     {
+        "id" : "19",
         "category" : "HAIR & BODY",
         "name" : "REUZEL GROOMING TONIC",
         "price" : "620.000 VND",
@@ -162,6 +181,7 @@
         
     },
     {
+        "id" : "20",
         "category" : "HAIR & BODY",
         "name" : "REUZEL DAILY CONDITIONER",
         "price" : "930.000 VND",
@@ -172,6 +192,7 @@
     },
     
     {
+        "id" : "21",
         "category" : "POMADE",
         "name" : "REUZEL EXTREME HOLD MATTE POMADE",
         "price" : "610.000 VND",
@@ -182,6 +203,7 @@
     },
 
     {
+        "id" : "22",
         "category" : "POMADE",
         "name" : "REUZEL FIBER POMADE",
         "price" : "610.000 VND",
@@ -192,6 +214,7 @@
     },
 
     {
+        "id" : "23",
         "category" : "POMADE",
         "name" : "REUZEL PINK GREASE HEAVY HOLD",
         "price" : "610.000 VND",
@@ -201,6 +224,7 @@
         
     },
     {
+        "id" : "24",
         "category" : "POMADE",
         "name" : "REUZEL RED WATER SOLUBLE HIGH SHEEN",
         "price" : "610.000 VND",
@@ -210,6 +234,7 @@
         
     },
     {
+        "id" : "25",
         "category" : "POMADE",
         "name" : "REUZEL CLAY MATTE POMADE",
         "price" : "610.000 VND",
@@ -220,6 +245,7 @@
     },
 
     {
+        "id" : "26",
         "category" : "POMADE",
         "name" : "REUZEL CONCRETE HOLD MATTE POMADE",
         "price" : "610.000 VND",
@@ -230,6 +256,7 @@
     },
 
     {
+        "id" : "27",
         "category" : "POMADE",
         "name" : "REUZEL BLUE STRONG HOLD WATER SOLUBLE HIGH SHEEN",
         "price" : "610.000 VND",
@@ -239,6 +266,7 @@
         
     },
     {
+        "id" : "28",
         "category" : "POMADE",
         "name" : "REUZEL GREEN GREASE MEDIUM HOLD",
         "price" : "610.000 VND",
@@ -248,6 +276,7 @@
         
     },
     {
+        "id" : "29",
         "category" : "POMADE",
         "name" : "REUZEL GROOMING CREAM",
         "price" : "430.000 VND",
@@ -258,6 +287,7 @@
     },
 
     {
+        "id" : "30",
         "category" : "POMADE",
         "name" : "REUZEL MATTE STYLING PASTE",
         "price" : "430.000 VND",
@@ -268,6 +298,7 @@
     },
 
     {
+        "id" : "31",
         "category" : "POMADE",
         "name" : "REUZEL MATTE TEXTURE POWDER",
         "price" : "550.000 VND",
@@ -277,6 +308,7 @@
         
     },
     {
+        "id" : "32",
         "category" : "POMADE",
         "name" : "REUZEL CLAY SPRAY",
         "price" : "280.000 VND",
@@ -287,6 +319,7 @@
     },
     
     {
+        "id" : "33",
         "category" : "SKIN CARE",
         "name" : "Clean & Fresh Solid Face Wash Stick",
         "price" : "520.000 VND",
@@ -297,6 +330,7 @@
     }, 
 
     {
+        "id" : "34",
         "category" : "SKIN CARE",
         "name" : "Hydrating Face Moisturizer",
         "price" : "550.000 VND",
@@ -307,6 +341,7 @@
     },
 
     {
+        "id" : "35",
         "category" : "SKIN CARE",
         "name" : "Intensive Care Eye Cream",
         "price" : "580.000 VND",
@@ -316,6 +351,7 @@
         
     },
     {
+        "id" : "36",
         "category" : "SKIN CARE",
         "name" : "RR Fine Fragrance",
         "price" : "560.000 VND",
@@ -325,6 +361,7 @@
         
     },
     {
+        "id" : "37",
         "category" : "SKIN CARE",
         "name" : "TAT – Buff Exfoliating Wash",
         "price" : "520.000 VND",
@@ -334,6 +371,7 @@
         
     },
     {
+        "id" : "38",
         "category" : "SKIN CARE",
         "name" : "TAT – Hydrabalm",
         "price" : "550.000 VND",
@@ -343,6 +381,7 @@
         
     },
     {
+        "id" : "39",
         "category" : "SKIN CARE",
         "name" : "TAT – Shine Tattoo Spray",
         "price" : "580.000 VND",
@@ -352,6 +391,7 @@
         
     },
     {
+        "id" : "40",
         "category" : "SKIN CARE",
         "name" : "TAT – Vivid Gel",
         "price" : "560.000 VND",

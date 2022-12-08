@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="./scrollBar.css">
     <title>Dashboard</title>
 </head>
 
@@ -57,6 +58,7 @@
                             <div class="box total-product-box">
                                 <p>Tổng sản phẩm</p>
                                 <p>450</p>
+                                <canvas id="myProductChart"></canvas>
                             </div>
                             <div class="box total-account-box">
                                 <p>Tổng tài khoản</p>
@@ -79,10 +81,11 @@
                     <div class="right-content-bottom product-statistics">
                         <table style="width:100%" class="table product-table">
                             <thead class="header-table">
+                                <th style="width:10%;">Id</th>
                                 <th style="width:40%">Tên sản phẩm</th>
                                 <th style="width:15%">Hình ảnh</th>
-                                <th style="width:15%">Loại</th>
-                                <th style="width:15%">Số lượng</th>
+                                <th style="width:10%">Loại</th>
+                                <th style="width:10%">Số lượng</th>
                                 <th style="width:15%">Trạng thái</th>
                             </thead>
                         </table>
@@ -100,51 +103,15 @@
                                 <th style="width:10%">Trạng thái</th>
                             </thead>
                             <tbody>
-                                <td>Nguyễn Tiến Phát</td>
-                                <td>0905752125</td>
+                                <td>Nguyen Tien Phat</td>
+                                <td>0344248396</td>
                                 <td>1</td>
                                 <td>Chi Nhánh 2</td>
                                 <td>09/12/2022</td>
                                 <td>15:00</td>
                                 <td class="status">
                                     <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tbody>
-                            <tbody>
-                                <td>Nguyễn Tiến Phát</td>
-                                <td>0905752125</td>
-                                <td>1</td>
-                                <td>Chi Nhánh 2</td>
-                                <td>09/12/2022</td>
-                                <td>15:00</td>
-                                <td class="status">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tbody>
-                            <tbody>
-                                <td>Nguyễn Tiến Phát</td>
-                                <td>0905752125</td>
-                                <td>1</td>
-                                <td>Chi Nhánh 2</td>
-                                <td>09/12/2022</td>
-                                <td>15:00</td>
-                                <td class="status">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tbody>
-                            <tbody>
-                                <td>Nguyễn Tiến Phát</td>
-                                <td>0905752125</td>
-                                <td>1</td>
-                                <td>Chi Nhánh 2</td>
-                                <td>09/12/2022</td>
-                                <td>15:00</td>
-                                <td class="status">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash" onclick="SomeDeleteRowFunction(this)"></i>
                                 </td>
                             </tbody>
                         </table>
@@ -160,22 +127,11 @@
                                 <th style="width:20%">Địa chỉ</th>
                                 <th style="width:10%">Trạng thái</th>
                             </thead>
-                            <tbody>
-                                <td>tienphat</td>
-                                <td>0905752125</td>
-                                <td>Pomade</td>
-                                <td>1</td>
-                                <td>Quảng Ngãi</td>
-                                <td class="status">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash"></i>
-                                </td>
-                            </tbody>
                         </table>
                     </div>
                     <!-- Thong ke tai khoan -->
                     <div class="right-content-bottom account-statistics">
-                        <table style="width:100%" class="table order">
+                        <table style="width:100%" class="table account">
                             <thead class="header-table">
                                 <th style="width:20%">Tài khoản</th>
                                 <th style="width:20%">Mật khẩu</th>
@@ -188,7 +144,7 @@
                                 <td>phat@gmail.com</td>
                                 <td class="status">
                                     <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <i class="fa-solid fa-trash" onclick="SomeDeleteRowFunction(this)"></i>
                                 </td>
                             </tbody>
                         </table>
@@ -198,12 +154,9 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="./admin.js"></script>
+<script src="./admin.js"></script>
 <script src="./getDataForProduct.js"></script>
 <script>
-    // var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
-    // var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
-    // const labels = Utils.months({ count: 12 });
     const data = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
@@ -233,6 +186,21 @@
     new Chart("myAccountChart",{
         type: "line",
         data: dataAccount,
+    })
+    const dataProduct = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Sản phẩm nhập',
+            data: [40,32,15,30,42,25,48],
+            fill: false,
+            borderColor: 'lightgreen',
+            backgroundColor: 'white',
+            tension: 0.1
+        }]
+    }
+    new Chart("myProductChart",{
+        type: "line",
+        data: dataProduct,
     })
 </script>
 
