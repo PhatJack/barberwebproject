@@ -1,0 +1,17 @@
+[
+    {
+        "username":"theanh28",
+        "phone":"0908141453",
+        "address":"12, 3/2, TPHCM",
+        "product": [
+            {
+                "id":"1",
+                "count":"2"
+            },
+            {
+                "id":"3",
+                "count":"4"
+            }
+        ]
+    }
+]
