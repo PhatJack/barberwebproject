@@ -30,21 +30,63 @@
       "email": "jack4@gmail.com"
     },
     {
-      "id": 5,
+      "id": 6,
       "username": "admin",
       "password": "admin",
       "email": "jack5@gmail.com"
     },
     {
+      "id": 7,
       "username": "phatnguyen",
       "password": "hello",
-      "email": "jack@gmail.com",
-      "id": 6
+      "email": "jack@gmail.com"
     },
     {
+      "id": 8,
       "username": "phatnguyen123",
       "password": "phat",
-      "email": "jack@gmail.com",
-      "id": 7
+      "email": "jack@gmail.com"
+    },
+    {
+      "id": 9,
+      "username": "phatnguyen321",
+      "password": "phat",
+      "email": "jack@gmail.com"
+    },
+    {
+      "id": 10,
+      "username": "phattien",
+      "password": "phat",
+      "email": "jacktien@gmail.com"
+    },
+    {
+      "id": 11,
+      "username": "baobui",
+      "password": "bao",
+      "email": "baobui@gmail.com"
+    },
+    {
+      "id": 12,
+      "username": "thuannguyen",
+      "password": "thuan123",
+      "email": "thuannguyen@gmail.com"
+    },
+    {
+      "id": 13,
+      "username": "huydinh",
+      "password": "huy1",
+      "email": "huydinh@gmail.com"
+    },
+    {
+      "id": 14,
+      "username": "thucbui",
+      "password": "thuc12",
+      "email": "thucbui@gmail.com"
+    },
+    {
+      "id": 15,
+      "username": "thucbng",
+      "password": "thucbng1",
+      "email": "thucbui123@gmail.com"
     }
 ]
