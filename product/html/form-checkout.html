@@ -9,51 +9,26 @@
   <link rel="stylesheet" href="../css/form-checkout.css">
   <link rel="icon" type="image/x-icon" href="../../home/img/favicon2.png">
   <script>
-    function save() {
-      var username = document.getElementById("username");
-      var phone = document.getElementById("phone");
-      var address = document.getElementById("address");
-      var email = document.getElementById("email");
-      if (username.value.trim() == '') {
-        alert('Username cannot be empty!!')
-      }
-      else if (phone.value.trim() == '') {
-        alert('Phone cannot be empty!!')
-      }
-      else if (address.value.trim() == '') {
-        alert('Address cannot be empty!!')
-      }
-      else {
-        alert('Buying successfully completed')
-      }
-    }
-    function enableBtn() {
-      var btn = document.querySelector(".field-input-btn")
-      var input = document.querySelector(".field-input")
-      if (input.value != "")
-        btn.classList.add("field-input-btn-enable")
-      else
-        btn.classList.remove("field-input-btn-enable")
-    }
+
   </script>
   <script src="../script.js"></script>
 </head>
 
 <body onload="loadPageFormCheckout()">
   <div class="container">
-    <h1>customer information</h1>
-    <form action="" method="">
+    <h1>Thông tin khách hàng</h1>
+    <div>
       <div class="space-between">
         <label for="username"></label>
-        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="text" name="username" id="username" placeholder="Tên">
       </div>
       <div class="space-between">
         <label for="phone"></label>
-        <input type="text" name="phone" id="phone" placeholder="Phone Number">
+        <input type="text" name="phone" id="phone" placeholder="Số điện thoại">
       </div>
       <div class="space-between">
         <label for="address"></label>
-        <input type="text" name="address" id="address" placeholder="Address">
+        <input type="text" name="address" id="address" placeholder="Địa chỉ">
       </div>
       <div class="space-between">
         <label for="email"></label>
@@ -72,7 +47,7 @@
         <textarea name="note" id="note" rows="5" cols="50" placeholder="Note..."></textarea>
       </div>
       <button onclick="save()">Đặt hàng</button>
-    </form>
+    </div>
   </div>
 
   <div class="sidebar">

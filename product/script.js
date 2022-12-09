@@ -1,5 +1,27 @@
 //category
-
+function save() {
+  var username = document.getElementById("username");
+  var phone = document.getElementById("phone");
+  var address = document.getElementById("address");
+  var email = document.getElementById("email");
+  if (username.value.trim() == "") {
+    alert("Username cannot be empty!!");
+  } else if (phone.value.trim() == "") {
+    alert("Phone cannot be empty!!");
+  } else if (address.value.trim() == "") {
+    alert("Address cannot be empty!!");
+  } else {
+    alert("Buying successfully completed");
+    window.location.href = "./category.html";
+    localStorage.removeItem("cart");
+  }
+}
+function enableBtn() {
+  var btn = document.querySelector(".field-input-btn");
+  var input = document.querySelector(".field-input");
+  if (input.value != "") btn.classList.add("field-input-btn-enable");
+  else btn.classList.remove("field-input-btn-enable");
+}
 function goToProInfo(img) {
   var category = document.querySelector("#wrapper");
   var product_info = document.querySelector("#product-information");

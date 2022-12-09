@@ -10,7 +10,7 @@ displayNumberOfProductInCart();
 function displayNumberOfProductInCart() {
   let currentCart = JSON.parse(localStorage.getItem("cart"));
   let iconCart = document.querySelector(".bi-cart");
-  if (currentCart.length == 0)
+  if (currentCart == null || currentCart.length == 0)
     iconCart.style.setProperty("--bi-cartAfterDisplay", "none");
   else {
     iconCart.style.setProperty("--bi-cartAfterDisplay", "block");
