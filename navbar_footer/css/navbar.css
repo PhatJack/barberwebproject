@@ -129,7 +129,9 @@ a {
   text-align: left;
   display: block;
 }
-
+#login-menu {
+  transform: translateX(-150px);
+}
 .hero {
   display: none;
 }

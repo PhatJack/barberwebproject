@@ -101,17 +101,6 @@ overlay.onclick = () => {
   overlay.style.display = "none";
 };
 
-function goToFormCheckout(from) {
-  switch (from) {
-    case "home":
-      window.location.href = "./product/html/form-checkout.html";
-    case "course":
-      window.location.href = "../../product/html/form-checkout.html";
-    case "album":
-      window.location.href = "../product/html/form-checkout.html";
-    case "booking":
-      window.location.href = "../product/html/form-checkout.html";
-    case "product":
-      window.location.href = "./form-checkout.html";
-  }
+function goToFormCheckout() {
+  window.location.href = "../../product/html/form-checkout.html";
 }
