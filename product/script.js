@@ -54,11 +54,24 @@ function createList(category) {
         currentProductData.push(productData[i]);
 }
 function loadPageCategory() {
+  console.log("yes");
   showSlides();
   createList("ALL");
-  console.log(currentProductData);
+  // console.log(currentProductData);
   showCurrentProduct();
   showCurrentDot();
+  let userMenu = document.getElementById("login-menu");
+  const currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
+  if (currentAccount == null) {
+    userMenu.innerHTML = `
+        <li><a href="./login/login.html" target="_blank" id="link-login">Đăng nhập</a></li>
+        `;
+  } else {
+    userMenu.innerHTML = `
+        <li><a href="./login/login.html" target="_blank" id="link-login">Xin chào ${currentAccount.username}</a></li>
+        <li><a href="#" id="link-logout" onclick="logOut()">Đăng xuất</a></li>
+        `;
+  }
 }
 
 function showCurrentProduct() {
@@ -202,6 +215,18 @@ function loadPageProductInfo() {
     numberWithCommas(product.price) + " VND";
   document.querySelector(".product-info-content-details").innerHTML =
     productDetails[Math.floor(Math.random() * 5)];
+  let userMenu = document.getElementById("login-menu");
+  const currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
+  if (currentAccount == null) {
+    userMenu.innerHTML = `
+        <li><a href="./login/login.html" target="_blank" id="link-login">Đăng nhập</a></li>
+        `;
+  } else {
+    userMenu.innerHTML = `
+        <li><a href="./login/login.html" target="_blank" id="link-login">Xin chào ${currentAccount.username}</a></li>
+        <li><a href="#" id="link-logout" onclick="logOut()">Đăng xuất</a></li>
+        `;
+  }
 }
 //mouse-move
 let item = document.querySelector(".product-content-left-img");

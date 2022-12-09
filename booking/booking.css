@@ -20,6 +20,7 @@ body {
   overflow-y: scroll;
 }
 p {
+  margin-left: 10px;
   font-weight: 200;
   font-size: 18px;
   color: rgb(202, 160, 105);
@@ -344,7 +345,7 @@ textarea {
   margin-right: 30px;
   color: gainsboro;
 }
-.services-container > ol{
+.services-container > ol {
   padding: 0 2%;
 }
 /* -------------ctm-info-sub-container------------- */
@@ -378,6 +379,7 @@ textarea {
 .ctm-info {
   word-break: keep-all;
   color: white;
+  margin-left: 40px;
 }
 .confirm-btn,
 .edit-btn {
@@ -388,6 +390,7 @@ textarea {
   background-color: rgb(202, 160, 105);
   margin-bottom: 10px;
   transition: background 0.2s ease-in-out;
+  padding: 3px;
 }
 .confirm-btn:hover,
 .edit-btn:hover {

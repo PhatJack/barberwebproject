@@ -13,6 +13,18 @@ function loadPage() {
             </div>
         </div>`;
   }
+  let userMenu = document.getElementById("login-menu");
+  const currentAccount = JSON.parse(localStorage.getItem("currentAccount"));
+  if (currentAccount == null) {
+    userMenu.innerHTML = `
+        <li><a href="./login/login.html" target="_blank" id="link-login">Đăng nhập</a></li>
+        `;
+  } else {
+    userMenu.innerHTML = `
+        <li><a href="./login/login.html" target="_blank" id="link-login">Xin chào ${currentAccount.username}</a></li>
+        <li><a href="#" id="link-logout" onclick="logOut()">Đăng xuất</a></li>
+        `;
+  }
 }
 function changeHairStyle() {
   var style = document.querySelector("#style");
