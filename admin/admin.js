@@ -52,7 +52,7 @@ async function editContent(o) {
                 </td>
                 <td class="input-field img" style="width:15%">
                     <p>Sửa hình ảnh</p>
-                    <input type="file" />
+                    <input type="file" name="myImage" accept="image/*"/>
                 </td>
                 <td class="input-field category" style="width:10%">
                     <p>Sửa loại</p>
@@ -64,16 +64,38 @@ async function editContent(o) {
                 </td>
                 <td class="input-field btn" style="width:15%">
                     <input type="submit" class="dec-btn" value="Hủy"/>
-                    <input type="submit" class="acp-btn" value="Đồng ý"/>
+                    <input type="submit" class="acp-btn" value="Đồng ý" onclick="confirmEditContent(this)"/>
                 </td>
             </tr>
         `
-
     var p = o.parentNode.parentNode
     if (p.parentNode.childElementCount == 1)
         p.parentNode.insertAdjacentHTML("beforeend", html)
 
     p.nextElementSibling.classList.toggle("active")
+}
+function confirmEditContent(o) {
+    let p = o.parentNode.parentNode;
+    // let temp = p.previousElementSibling;
+    let name = document.querySelector(".name input").value;
+    let img = document.querySelector(".img input").value;
+    let category = document.querySelector(".category input").value;
+    let quantity = document.querySelector(".quantity input").value;
+    // console.log(quantity);
+    let idvalue = document.querySelector("tr td:nth-child(1)");
+    let namevalue = document.querySelector("tr td:nth-child(2)");
+    let imgvalue = document.querySelector("tr td:nth-child(3)");
+    let categoryvalue = document.querySelector("tr td:nth-child(4)");
+    let quantityvalue = document.querySelector("tr td:nth-child(5)");
+    idvalue.innerHTML = idvalue.innerHTML;
+    namevalue.innerHTML = name;
+    imgvalue.childNodes[1].childNodes[1].src = img;
+    // imgvalue.children
+    // console.log(imgvalue.childNodes[1].childNodes[1].src = img);
+    categoryvalue.innerHTML = category;
+    quantityvalue.innerHTML = quantity;
+    // p.classList.remove("active");
+    
 }
 async function editContentBooking(o) {
     let html = ""
@@ -113,9 +135,8 @@ async function editContentBooking(o) {
     if (p.parentNode.childElementCount == 1)
         p.parentNode.insertAdjacentHTML("beforeend", html)
     p.nextElementSibling.classList.toggle("active")
-
 }
-async function editContentOrder(o){
+async function editContentOrder(o) {
     let html = ""
     html = `
     <tr class="edit-form-table">
@@ -150,7 +171,7 @@ async function editContentOrder(o){
         p.parentNode.insertAdjacentHTML("beforeend", html)
     p.nextElementSibling.classList.toggle("active")
 }
-async function editContentAccount(o){
+async function editContentAccount(o) {
     let html = ""
     html = `
     <tr class="edit-form-table">
