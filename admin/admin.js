@@ -37,11 +37,10 @@ function SomeDeleteRowFunction(o) {
 // editBtn.addEventListener("click",() => {
 //     alert('hello');
 // })
-function editContent(o) {
-    let editTable = document.querySelector("tbody");
-    let html = "";
-    html += `
-        <tr class="edit-table">
+function editContent(o,id) {
+    let html = ""
+        html = `
+            <tr class="edit-form-table">
                 <td class="input-field id" style="width:10%">
                     <p>Sửa ID</p>
                     <input type="number" />
@@ -66,9 +65,10 @@ function editContent(o) {
                     <input type="submit" class="dec-btn" value="Hủy"/>
                     <input type="submit" class="acp-btn" value="Đồng ý"/>
                 </td>
-        </tr>
-    `
-    editTable.innerHTML += html
-    let temp = document.querySelector(".edit-table");
-    temp.classList.toggle("active");
+            </tr>
+        `
+    var p = o.parentNode.parentNode 
+    p.parentNode.innerHTML += html;
+    let temp = document.querySelector(".edit-form-table")
+    temp.classList.toggle("active")
 }

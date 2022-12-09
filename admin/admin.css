@@ -193,6 +193,7 @@ body {
     padding-bottom: 10px;
     font-size: 20px;
     padding-right: 5px;
+    text-align: center;
 }
 table tbody td{
     text-align: center;
@@ -205,6 +206,7 @@ table tbody td{
 .table tbody td .product-img {
     width: 150px;
     height: 150px;
+    margin: 0 auto;
 }
 
 .product-img img {
@@ -250,26 +252,21 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.edit-table {
-    background-color: #ce956c;
-    /* padding: 10px; */
-    height: 100px;
+.edit-form-table{
+    background-color: #c79f83;
+    padding: 10px;
     display: none;
 }
-
-.input-field input {
-    width: 100px;
-    padding: 5px;
-    word-break: break-all;
-    /* border: none; */
-}
-.edit-table.active{
+.edit-form-table.active{
     display: table-row;
 }
-.edit-table .input-field {
+.edit-form-table input{
+    width: 100px;
+    padding: 5px;
+}
+.btn{
     padding: 10px;
 }
-
 .name input {
     width: 90%;
 }

@@ -14,7 +14,6 @@ async function getData() {
     data.forEach((element) => {
         table.innerHTML += `
         <tbody>
-            <tr>
             <td>${element.id}</td>
             <td>${element.name}</td>
             <td>
@@ -25,10 +24,9 @@ async function getData() {
             <td>${element.category}</td>
             <td>${element.quantity}</td>
             <td class="status">
-                <i class="fa-solid fa-pen-to-square" id="edit" onclick="editContent(this)"></i>
+                <i class="fa-solid fa-pen-to-square" id="edit" onclick="editContent(this,${element.id})"></i>
                 <i class="fa-solid fa-trash" id="delete" onclick="SomeDeleteRowFunction(this)"></i>
             </td>
-            </tr>
         </tbody>
         `
     })
