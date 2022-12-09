@@ -37,7 +37,8 @@ function SomeDeleteRowFunction(o) {
 // editBtn.addEventListener("click",() => {
 //     alert('hello');
 // })
-function editContent(o,id) {
+async function editContent(o) {
+    // let elements = document.getElementsByClassName("tr.edit-")
     let html = ""
         html = `
             <tr class="edit-form-table">
@@ -67,8 +68,14 @@ function editContent(o,id) {
                 </td>
             </tr>
         `
+    
     var p = o.parentNode.parentNode 
-    p.parentNode.innerHTML += html;
-    let temp = document.querySelector(".edit-form-table")
-    temp.classList.toggle("active")
+    // if(p.parentNode.childNodes.length)
+    // console.log(elements);
+    // console.log(p.parentNode.children.length);
+    // if(p.parentNode.childElementCount == 1) p.parentNode.innerHTML += html;
+    if(p.parentNode.childElementCount == 1) p.parentNode.insertAdjacentHTML("beforeend", html)
+    
+    p.nextElementSibling.classList.toggle("active");
+
 }
