@@ -39,6 +39,7 @@ async function getDataBooking() {
     data.forEach((element) => {
         tableBooking.innerHTML += `
             <tbody>
+            <tr>
             <td>${element.name}</td>
             <td>${element.phone}</td>
             <td>${element.numberOfCustomer}</td>
@@ -46,9 +47,10 @@ async function getDataBooking() {
             <td>${element.date}</td>
             <td>${element.time}</td>
             <td class="status">
-                <i class="fa-solid fa-pen-to-square" id="edit"></i>
+                <i class="fa-solid fa-pen-to-square" id="edit" onclick="editContentBooking(this)"></i>
                 <i class="fa-solid fa-trash" id="delete" onclick="SomeDeleteRowFunction(this)"></i>
             </td>
+            </tr>
     </tbody>
         `
     })
@@ -60,15 +62,17 @@ async function getDataOrder() {
     data.forEach((element) => {
         tableOrder.innerHTML += `
             <tbody>
+            <tr>
             <td>${element.username}</td>
             <td>${element.phone}</td>
             <td>${element.product[element.product.length - 1].id}</td>
             <td>${element.product[element.product.length - 1].count}</td>
             <td>${element.address}</td>
             <td class="status">
-                <i class="fa-solid fa-pen-to-square" id="edit"></i>
+                <i class="fa-solid fa-pen-to-square" id="edit" onclick="editContentOrder(this)"></i>
                 <i class="fa-solid fa-trash" id="delete" onclick="SomeDeleteRowFunction(this)"></i>
             </td>
+            </tr>
     </tbody>
         `
     })
@@ -79,13 +83,15 @@ async function getDataAccount() {
     data.forEach((element) => {
         tableAccount.innerHTML += `
             <tbody>
+            <tr>
             <td>${element.username}</td>
             <td>${element.password}</td>
             <td>${element.email}</td>
             <td class="status">
-                <i class="fa-solid fa-pen-to-square" id="edit" onclick="editContent()"></i>
+                <i class="fa-solid fa-pen-to-square" id="edit" onclick="editContentAccount(this)"></i>
                 <i class="fa-solid fa-trash" id="delete" onclick="SomeDeleteRowFunction(this)"></i>
             </td>
+            </tr>
     </tbody>
         `
     })
