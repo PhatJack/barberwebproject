@@ -152,10 +152,35 @@
             </div>
         </div>
     </div>
+    <div class="overlay"></div>
+    <div id="addProduct">
+        <div class="container">
+            <div>
+                <div class="title">
+                    <h2>Thêm sản phẩm</h2>
+                </div>
+                <div class="info">
+                    <input class="fname" type="text" name="name" placeholder="Tên sản phẩm">
+                    <input type="number" min=1 name="name" placeholder="Số lượng">
+                    <input type="file" name="name">
+                    <select>
+                        <option value="none" selected disabled hidden>Loại</option>
+                        <option value="BEARD & SHAVE">BEARD & SHAVE</option>
+                        <option value="HAIR & BODY">HAIR & BODY</option>
+                        <option value="POMADE">POMADE</option>
+                        <option value="SKIN CARE">SKIN CARE</option>
+                    </select>
+                </div>
+                <button onclick="addProduct()">Thêm</button>
+            </div>
+
+        </div>
+    </div>
 </body>
 <script src="./search.js"></script>
 <script src="./admin.js"></script>
 <script src="./getDataForProduct.js"></script>
+<script src="./add.js"></script>
 <script>
     const data = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
