@@ -71,7 +71,7 @@
                     <div class="right-content-middle">
                         <div class="search-content">
                             <input type="text">
-                            <input type="submit" value="Tìm kiếm">
+                            <input type="submit" value="Tìm kiếm" onclick="searchProduct()">
                         </div>
                         <div class="add-content">
                             <input type="submit" value="Thêm"></input>
@@ -154,6 +154,7 @@
         </div>
     </div>
 </body>
+<script src="./search.js"></script>
 <script src="./admin.js"></script>
 <script src="./getDataForProduct.js"></script>
 <script>
@@ -161,7 +162,7 @@
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             label: 'Doanh thu',
-            data: [13500000,10000000,16500000,25000000,20000000,28000000,25560000],
+            data: [13500000, 10000000, 16500000, 25000000, 20000000, 28000000, 25560000],
             fill: false,
             borderColor: 'rgb(75, 192, 192)',
             backgroundColor: 'white',
@@ -176,14 +177,14 @@
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             label: 'Tài khoản đăng kí',
-            data: [40,38,52,45,20,100,80],
+            data: [40, 38, 52, 45, 20, 100, 80],
             fill: false,
             borderColor: '#9f7150',
             backgroundColor: 'white',
             tension: 0.1
         }]
     }
-    new Chart("myAccountChart",{
+    new Chart("myAccountChart", {
         type: "line",
         data: dataAccount,
     })
@@ -191,14 +192,14 @@
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             label: 'Sản phẩm nhập',
-            data: [40,32,15,30,42,25,48],
+            data: [40, 32, 15, 30, 42, 25, 48],
             fill: false,
             borderColor: 'lightgreen',
             backgroundColor: 'white',
             tension: 0.1
         }]
     }
-    new Chart("myProductChart",{
+    new Chart("myProductChart", {
         type: "line",
         data: dataProduct,
     })
